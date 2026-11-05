@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power BI Report</title>
+  <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.20.1/dist/powerbi.min.js"></script>
+  <style>
+      html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background: #f7f9fb;
+      }
+      body { display: flex; flex-direction: column; }
+
+      /* slim toolbar */
+      .toolbar {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 8px 14px;
+          background: #ffffff;
+          border-bottom: 1px solid #e1e7ee;
+          flex-wrap: wrap;
+          font-size: 13px;
+      }
+      .toolbar .left { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+      .toolbar .right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+      .toolbar select,
+      .toolbar input[type=text] {
+          padding: 6px 8px;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          font-size: 13px;
+          min-width: 0;
+      }
+      .toolbar input[type=text] { width: 180px; }
+      .toolbar select { min-width: 200px; }
+      .toolbar .label { color: #666; }
+      .btn {
+          padding: 6px 12px;
+          border: none;
+          border-radius: 4px;
+          background: #0078d4;
+          color: white;
+          font-size: 13px;
+          cursor: pointer;
+      }
+      .btn:hover { background: #0069b8; }
+      .btn.ghost { background: transparent; color: #555; border: 1px solid #ced4da; }
+      .btn.ghost:hover { background: #f1f3f5; }
+      .btn.danger { background: transparent; color: #b00020; border: 1px solid transparent; padding: 6px 8px; }
+      .btn.danger:hover { background: #fdecea; }
+      .btn:disabled { opacity: 0.38; cursor: default; pointer-events: none; }
+
+      /* report container: fills the viewport below the toolbar */
+      #powerbi-container {
+          flex: 1 1 auto;
+          width: 100%;
+          min-height: 0;
+          border: none;
+      }
+
+      /* transient status pill (auto-hides) */
+      .toast {
+          position: fixed;
+          left: 50%;
+          bottom: 18px;
+          transform: translateX(-50%);
+          background: #212529;
+          color: white;
+          padding: 8px 14px;
+          border-radius: 999px;
+          font-size: 13px;
+          opacity: 0;
+          transition: opacity 200ms ease;
+          pointer-events: none;
+          max-width: 80vw;
+          text-align: center;
+          z-index: 9999;
+      }
+      .toast.show { opacity: 0.95; }
+      .toast.error { background: #b00020; }
+
+      /* Full-screen overlay used during Save / Clear-all to hide the page-flip flicker */
+      .overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(247, 249, 251, 0.92);
+          display: none;
+          align-items: center;
+          justify-content: center;
+          z-index: 10000;
+          backdrop-filter: blur(2px);
+      }
+      .overlay.show { display: flex; }
+      .overlay .panel {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 14px;
+          padding: 22px 28px;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+          min-width: 260px;
+      }
+      .overlay .msg {
+          font-size: 14px;
+          color: #212529;
+          font-weight: 600;
+          text-align: center;
+      }
+      .overlay .sub {
+          font-size: 12px;
+          color: #6c757d;
+          text-align: center;
+      }
+      .spinner {
+          width: 28px;
+          height: 28px;
+          border: 3px solid #e1e7ee;
+          border-top-color: #0078d4;
+          border-radius: 50%;
+          animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <!-- Slim toolbar -->
+  <div class="toolbar">
+      <div class="left">
+          <!-- Saved-view dropdown (visible only when signed in) -->
+          <span id="savedWrap" class="{{ 'hidden' if not user_id else '' }}" style="display:flex;align-items:center;gap:8px;">
+              <span class="label">Saved view:</span>
+              <select id="savedSelect">
+                  <option value="">— select —</option>
+              </select>
+              <button id="deleteBtn" class="btn danger" title="Delete selected saved view">✕</button>
+          </span>
+
+          <!-- Save current (visible only when signed in) -->
+          <span id="saveWrap" class="{{ 'hidden' if not user_id else '' }}" style="display:flex;align-items:center;gap:6px;">
+              <input type="text" id="filterName" placeholder="Name your view…">
+              <button id="saveFilterBtn" class="btn">Save</button>
+          </span>
+
+          <!-- History navigation -->
+          <button id="backBtn" class="btn ghost" title="Back to previous filter state" disabled>&#8592;</button>
+          <button id="fwdBtn" class="btn ghost" title="Forward to next filter state" disabled>&#8594;</button>
+
+          <!-- Clear all filters (always available; one-click reset) -->
+          <button id="clearAllBtn" class="btn ghost" title="Clear all slicers on every page you have visited">Clear all</button>
+
+          <!-- Export visual data -->
+          <button id="exportBtn" class="btn ghost" title="Export visual data">Export</button>
+
+          <!-- Visualise: turns a plain-language request into a report filter.
+               Separate from chatPowerBI's own chat (which lives inside the
+               report itself) - this box only ever produces filters, so no
+               slash-command prefix is needed. -->
+          <span style="display:flex;align-items:center;gap:6px;position:relative;">
+              <input type="text" id="visualiseInput" placeholder="Ask to filter, e.g. show me sales in the UK" style="width:260px;">
+              <button id="visualiseBtn" class="btn">Visualise</button>
+
+              <!-- Small popup anchored right under the Visualise box, not a
+                   full-screen modal - shown when a request is too ambiguous
+                   to resolve, with an optional direct "Go to X" page jump. -->
+              <div id="ambiguousPopup" class="hidden" style="position:absolute;top:calc(100% + 6px);left:0;z-index:50;width:300px;background:#ffffff;border:1px solid #e1e7ee;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,0.15);padding:10px 12px;">
+                  <div id="ambiguousMsg" style="font-size:12.5px;color:#333;margin-bottom:8px;line-height:1.4;"></div>
+                  <div style="display:flex;gap:6px;justify-content:flex-end;">
+                      <button id="ambiguousDismissBtn" class="btn ghost" style="font-size:12px;padding:4px 10px;">Try again</button>
+                      <button id="ambiguousGoBtn" class="btn hidden" style="font-size:12px;padding:4px 10px;">Go to <span id="ambiguousPageName"></span></button>
+                  </div>
+              </div>
+          </span>
+      </div>
+
+      <div class="right">
+          <!-- Logged-out: name/email box -->
+          <span id="loginRow" class="{{ 'hidden' if user_id else '' }}" style="display:flex;align-items:center;gap:6px;">
+              <input type="text" id="userInput" placeholder="Sign in (name or email)">
+              <button id="loginBtn" class="btn">Sign in</button>
+          </span>
+          <!-- Logged-in: identity + sign out -->
+          <span id="userRow" class="{{ '' if user_id else 'hidden' }}" style="display:flex;align-items:center;gap:8px;">
+              <span class="label">Signed in as <strong id="userName">{{ user_id }}</strong></span>
+              <button id="logoutBtn" class="btn ghost">Sign out</button>
+          </span>
+      </div>
+  </div>
+
+  <!-- Persistent reply line for Visualise (clarify questions / confirmations) -->
+  <div id="visualiseReply" class="hidden" style="padding:8px 14px;font-size:13px;border-bottom:1px solid #e1e7ee;background:#fff8e1;color:#5a4400;display:flex;align-items:center;gap:10px;">
+      <span id="visualiseReplyText" style="flex:1;"></span>
+      <a href="#" id="visualiseResetLink" style="color:#0078d4;text-decoration:underline;white-space:nowrap;">New question</a>
+  </div>
+
+  <!-- Report fills the rest of the viewport -->
+  <div id="powerbi-container"></div>
+
+  <!-- Auto-hiding toast for status messages -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Export visual picker overlay -->
+  <div id="exportOverlay" class="overlay" aria-hidden="true">
+      <div class="panel" style="min-width:320px;max-width:460px;gap:10px;">
+          <div class="msg">Export data
+              <span id="exportOverlayLimit" style="font-weight:400;font-size:12px;color:#6c757d;"></span>
+          </div>
+          <div style="display:flex;gap:6px;align-items:center;">
+              <span style="font-size:12px;color:#6c757d;">Format:</span>
+              <button id="fmtCsvBtn" class="btn" style="font-size:12px;padding:3px 12px;">CSV</button>
+              <button id="fmtXlsxBtn" class="btn ghost" style="font-size:12px;padding:3px 12px;">Excel</button>
+          </div>
+          <div id="exportSub" class="sub">Pick a visual to download</div>
+          <div id="exportVisualList" style="display:flex;flex-direction:column;gap:6px;width:100%;max-height:220px;overflow-y:auto;"></div>
+          <div id="exportWarning" style="display:none;width:100%;padding:6px 0;font-size:13px;">
+              <p style="margin:0 0 6px;">
+                  &#9888;&#65039; This export has more than <strong id="exportWarningLimit"></strong> rows —
+                  only the first <strong id="exportWarningLimit2"></strong> will be downloaded.
+              </p>
+              <p style="margin:0 0 10px;color:#6c757d;">
+                  To access more data contact
+                  <a href="mailto:info@airlineeconomics.com" style="color:#0d6efd;">info@airlineeconomics.com</a>
+              </p>
+              <div style="display:flex;gap:8px;">
+                  <button id="exportProceedBtn" class="btn">Download <span id="exportProceedLimit"></span> rows</button>
+                  <button id="exportBackBtn" class="btn ghost">Back</button>
+              </div>
+          </div>
+          <details style="width:100%;font-size:12px;">
+              <summary style="cursor:pointer;color:#6c757d;user-select:none;padding:2px 0;">Override: type dataset table name manually</summary>
+              <div style="display:flex;gap:6px;margin-top:6px;">
+                  <input id="exportTableInput" type="text" placeholder="Exact table name from Fields pane"
+                         style="flex:1;padding:5px 8px;border:1px solid #ced4da;border-radius:4px;font-size:13px;">
+                  <button id="exportRunBtn" class="btn">Download</button>
+              </div>
+          </details>
+          <button class="btn ghost"
+                  onclick="document.getElementById('exportOverlay').classList.remove('show');document.getElementById('exportOverlay').setAttribute('aria-hidden','true');">Cancel</button>
+      </div>
+  </div>
+
+  <!-- Full-screen overlay shown while Save / Clear-all sweep through pages -->
+  <div id="overlay" class="overlay" aria-hidden="true">
+      <div class="panel">
+          <div class="spinner" aria-hidden="true"></div>
+          <div id="overlayMsg" class="msg">Working…</div>
+          <div id="overlaySub" class="sub">This may take a moment.</div>
+      </div>
+  </div>
+
+  <!-- Clear All confirmation overlay -->
+  <div id="clearConfirmOverlay" class="overlay" aria-hidden="true">
+      <div class="panel" style="min-width:300px;max-width:400px;gap:12px;">
+          <div class="msg">Clear all filters?</div>
+          <div class="sub">This will remove all slicer selections across every page you have visited.</div>
+          <div style="display:flex;gap:8px;justify-content:flex-end;width:100%;">
+              <button id="clearCancelBtn" class="btn ghost">Cancel</button>
+              <button id="clearConfirmBtn" class="btn">Clear All</button>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      const models = window['powerbi-client'] ? window['powerbi-client'].models : (window.powerbi && window.powerbi.models) || {};
+
+      const config = {
+          type: 'report',
+          id: '{{ report_id }}',
+          embedUrl: '{{ embed_url }}',
+          accessToken: '{{ embed_token }}',
+          tokenType: 1,
+          settings: {
+              filterPaneEnabled: false,
+              navContentPaneEnabled: true,
+              panes: {
+                  filters: { expanded: false, visible: false },
+                  pageNavigation: { visible: true }
+              },
+              exportDataMode: models.ExportDataType ? models.ExportDataType.Underlying : 1
+          }
+      };
+
+      const embedContainer = document.getElementById('powerbi-container');
+
+      let report = null;
+      let pendingFilters = null;
+
+      // -------------------- overlay (hides flicker during sweep) ----------
+      function showOverlay(msg, sub) {
+          const el = document.getElementById('overlay');
+          if (!el) { return; }
+          document.getElementById('overlayMsg').textContent = msg || 'Working…';
+          document.getElementById('overlaySub').textContent = sub || '';
+          el.classList.add('show');
+          el.setAttribute('aria-hidden', 'false');
+      }
+      function updateOverlaySub(sub) {
+          const el = document.getElementById('overlaySub');
+          if (el) { el.textContent = sub || ''; }
+      }
+      function hideOverlay() {
+          const el = document.getElementById('overlay');
+          if (!el) { return; }
+          el.classList.remove('show');
+          el.setAttribute('aria-hidden', 'true');
+      }
+
+      // -------------------- toast (auto-hiding status) --------------------
+      let toastTimer = null;
+      function setMsg(text, isError) {
+          const el = document.getElementById('toast');
+          if (!text) {
+              el.classList.remove('show');
+              return;
+          }
+          el.textContent = text;
+          el.classList.toggle('error', !!isError);
+          el.classList.add('show');
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => el.classList.remove('show'), isError ? 6000 : 3500);
+      }
+
+      try {
+          report = powerbi.embed(embedContainer, config);
+
+          report.on('loaded', async () => {
+              try { await refreshCacheForActivePage(); } catch (e) { /* ignore */ }
+              if (pendingFilters) {
+                  applyFilters(pendingFilters);
+                  pendingFilters = null;
+              }
+              // Page titles are available instantly, with no slicer walk
+              // needed - this is what lets /visualise guess a page from the
+              // table name even before the slicer sweep below has run.
+              try {
+                  const pages = await report.getPages();
+                  await fetch('/api/pages/sync', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                          pages: pages.map(p => ({ name: p.name, displayName: p.displayName }))
+                      })
+                  });
+              } catch (e) { /* non-critical */ }
+
+              // One-time slicer sweep (page + visual bindings - needed for
+              // live setSlicerState navigation, not just data filtering).
+              // No button for this anymore: run it automatically, but only
+              // once per report - field_registry.json persists across
+              // sessions, so this is skipped on every later load once done.
+              try {
+                  const res = await fetch('/api/fields');
+                  const info = await res.json();
+                  const alreadySwept = (info.fields || []).some(f => f.visual);
+                  if (!alreadySwept) {
+                      await harvestReportFields();
+                  }
+              } catch (e) { /* non-critical */ }
+          });
+
+          report.on('rendered', () => { /* silent */ });
+
+          report.on('error', (event) => {
+              const error = event.detail;
+              console.error('Power BI Error:', error);
+              setMsg('Power BI error: ' + (error.message || JSON.stringify(error)), true);
+          });
+
+          report.on('commandTriggered', async (event) => {
+              const detail = event.detail;
+              if (!detail || detail.command !== 'exportData') { return; }
+              try {
+                  const pages = await report.getPages();
+                  const activePage = pages.find(p => p.isActive);
+                  if (!activePage) { return; }
+                  const visuals = await activePage.getVisuals();
+                  const dv = detail.visual;
+                  const visual = (dv && typeof dv.exportData === 'function')
+                      ? dv
+                      : visuals.find(v => v.name === (dv && dv.name));
+                  if (!visual || typeof visual.exportData !== 'function') {
+                      setMsg('Could not identify the visual to export.', true);
+                      return;
+                  }
+                  setMsg('Exporting…');
+                  const exportType = (models.ExportDataType && models.ExportDataType.Underlying !== undefined)
+                      ? models.ExportDataType.Underlying
+                      : 1;
+                  const result = await visual.exportData(exportType, 3000);
+                  const blob = new Blob([result.data], { type: 'text/csv;charset=utf-8;' });
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  a.href = url;
+                  a.download = (visual.title || visual.name || 'export') + '.csv';
+                  a.style.display = 'none';
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+                  URL.revokeObjectURL(url);
+                  setMsg('Exported data (max 3,000 rows).');
+              } catch (e) {
+                  console.error('[exportData] failed', e);
+                  setMsg('Export failed: ' + (e.message || e), true);
+              }
+          });
+
+          report.on('pageChanged', async (event) => {
+              try {
+                  const newPage = event && event.detail && event.detail.newPage;
+                  if (!newPage) { return; }
+                  visitedPages.add(newPage.name);
+                  await wait(300);
+                  if (pagesToClear.has(newPage.name)) {
+                      await clearSlicersOnActivePage();
+                      pagesToClear.delete(newPage.name);
+                  }
+                  await refreshCacheForActivePage();
+                  await applyArmedForPage(newPage.name);
+              } catch (e) {
+                  console.error('[pageChanged] handler error', e);
+              }
+          });
+      } catch (error) {
+          console.error('Embed initialization failed:', error);
+          setMsg('Embed error: ' + error.message, true);
+      }
+
+      // ===================================================================
+      // Clear-All undo / redo
+      // Back/Forward are ONLY enabled after Clear All is used.
+      // Back restores what was selected before the clear.
+      // Forward re-applies the clear.
+      // ===================================================================
+      let preClearSnapshot = null;  // state captured just before Clear All
+      let inClearedState = false;   // true while showing the post-clear blank
+
+      function updateNavButtons() {
+          const back = document.getElementById('backBtn');
+          const fwd = document.getElementById('fwdBtn');
+          if (back) { back.disabled = !preClearSnapshot || !inClearedState; }
+          if (fwd) { fwd.disabled = !preClearSnapshot || inClearedState; }
+      }
+
+      document.getElementById('backBtn')?.addEventListener('click', async () => {
+          if (!preClearSnapshot || !inClearedState) { return; }
+          inClearedState = false;
+          updateNavButtons();
+          await applyFilters(preClearSnapshot);
+      });
+
+      document.getElementById('fwdBtn')?.addEventListener('click', async () => {
+          if (!preClearSnapshot || inClearedState) { return; }
+          inClearedState = true;
+          updateNavButtons();
+          await applyFilters({ filters: [], slicers: [] });
+      });
+
+      // ===================================================================
+      // Saved filters (logic unchanged from previous version)
+      // ===================================================================
+      const isLoggedIn = {{ 'true' if user_id else 'false' }};
+
+      // --- Identity ---
+      document.getElementById('loginBtn')?.addEventListener('click', async () => {
+          const val = document.getElementById('userInput').value.trim();
+          if (!val) { return; }
+          const res = await fetch('/login', {
+              method: 'POST',
+              credentials: 'same-origin',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ user_id: val })
+          });
+          if (res.ok) { window.location.reload(); }
+      });
+      document.getElementById('userInput')?.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { document.getElementById('loginBtn').click(); }
+      });
+      // Sign out: hit /logout as a GET, which the server handles by clearing
+      // the session and redirecting back to '/'. This is more robust than a
+      // POST + window.reload() because the server's redirect issues a fresh
+      // page load with a known-clean session cookie.
+      document.getElementById('logoutBtn')?.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.location.href = '/logout';
+      });
+
+      // -------------------- helpers --------------------
+      function sanitizeFilters(filters) {
+          if (!Array.isArray(filters)) { return []; }
+          return filters
+              .filter(f => f && f.target && (f.$schema || f.filterType !== undefined))
+              .map(f => {
+                  const clean = Object.assign({}, f);
+                  delete clean.displaySettings;
+                  delete clean.requireSingleSelection;
+                  return clean;
+              });
+      }
+
+      function normalizeSaved(saved) {
+          if (Array.isArray(saved)) { return { filters: saved, slicers: [] }; }
+          return { filters: (saved && saved.filters) || [], slicers: (saved && saved.slicers) || [] };
+      }
+
+      function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+      async function getActivePageName() {
+          try {
+              const pages = await report.getPages();
+              const a = pages.find(p => p.isActive);
+              return a ? a.name : (pages[0] && pages[0].name);
+          } catch (e) { return null; }
+      }
+
+      async function activatePageByName(name) {
+          try {
+              const pages = await report.getPages();
+              const p = pages.find(x => x.name === name);
+              if (!p) { return null; }
+              if (!p.isActive) { await p.setActive(); await wait(400); }
+              return p;
+          } catch (e) { return null; }
+      }
+
+      // -------------------- armed-set state --------------------
+      let armedSet = null;
+      let armedAppliedPages = new Set();
+      let pagesToClear = new Set();
+      const visitedPages = new Set();
+      const slicerCache = {};
+      // Pages we have confirmed have ZERO slicer visuals — skip during sweeps.
+      const pagesWithNoSlicers = new Set();
+
+      function pagesInArmed() {
+          if (!armedSet || !Array.isArray(armedSet.slicers)) { return []; }
+          return Array.from(new Set(armedSet.slicers.map(s => s.page)));
+      }
+
+      // No persistent badge in the new UI — toast handles transient status.
+      function updateArmedBadge() { /* intentionally empty */ }
+
+      async function applyArmedForPage(pageName) {
+          if (!armedSet || !pageName) { return 0; }
+          if (armedAppliedPages.has(pageName)) { return 0; }
+          const todo = (armedSet.slicers || []).filter(s => s.page === pageName);
+          if (todo.length === 0) {
+              armedAppliedPages.add(pageName);
+              return 0;
+          }
+          let pages = [];
+          try { pages = await report.getPages(); } catch (e) { return 0; }
+          const page = pages.find(p => p.name === pageName) || pages.find(p => p.isActive);
+          if (!page) { return 0; }
+          let visuals = [];
+          try { visuals = await page.getVisuals(); } catch (e) { return 0; }
+          let applied = 0;
+          for (const saved of todo) {
+              const v = visuals.find(x => x.name === saved.visual && x.type === 'slicer');
+              if (!v) {
+                  console.warn('[applyArmedForPage] visual not found on page', pageName, saved.visual,
+                      'available:', visuals.map(x => x.name + ':' + x.type));
+                  setMsg('Could not find the slicer to update on this page (it may have changed).', true);
+                  continue;
+              }
+              try {
+                  await v.setSlicerState(saved.state);
+                  applied++;
+                  // Read back what the visual actually ended up with - the
+                  // call resolving without an error does not guarantee
+                  // Power BI accepted the selection. Any mismatch here is
+                  // definitive proof of an SDK/visual-level rejection,
+                  // not a timing or messaging bug in our own code.
+                  try {
+                      const confirmState = await v.getSlicerState();
+                      const wantVals = JSON.stringify((saved.state.filters || []).map(f => f.values || f.conditions));
+                      const gotVals = JSON.stringify((confirmState.filters || []).map(f => f.values || f.conditions));
+                      if (wantVals !== gotVals) {
+                          console.warn('[applyArmedForPage] slicer did not retain the set value',
+                              saved.visual, 'wanted:', wantVals, 'got:', gotVals);
+                          setMsg('Slicer "' + (saved.visualTitle || saved.visual) + '" did not keep the selection (reverted after setting).', true);
+                      }
+                  } catch (e) { /* read-back not critical */ }
+              }
+              catch (e) {
+                  console.error('[applyArmedForPage] setSlicerState failed', saved.visual, saved.state, e);
+                  setMsg('Slicer update failed: ' + (e.message || e.detailedMessage || e), true);
+              }
+          }
+          armedAppliedPages.add(pageName);
+          return applied;
+      }
+
+      async function applyFilters(saved) {
+          if (!report) { setMsg('Report not ready yet.', true); return; }
+          const { filters, slicers } = normalizeSaved(saved);
+          const clean = sanitizeFilters(filters);
+
+          let filterErr = null;
+          if (clean.length > 0) {
+              try {
+                  await report.setFilters(clean);
+              } catch (err) {
+                  try {
+                      const replaceOp = (models.FiltersOperations && models.FiltersOperations.Replace) || 'Replace';
+                      await report.updateFilters(replaceOp, clean);
+                  } catch (err2) {
+                      filterErr = (err2 && (err2.detailedMessage || err2.message)) || err2;
+                      console.error('Failed to apply report filters', err2);
+                  }
+              }
+          }
+
+          armedSet = { filters: clean, slicers: slicers };
+          armedAppliedPages = new Set();
+          const newSetPages = new Set(pagesInArmed());
+          pagesToClear = new Set();
+          for (const cachedPageName of Object.keys(slicerCache)) {
+              if (!newSetPages.has(cachedPageName)) {
+                  pagesToClear.add(cachedPageName);
+              }
+          }
+
+          const activeName = await getActivePageName();
+          let nowApplied = 0;
+          if (activeName) {
+              // Never clear a slicer we're about to immediately re-set -
+              // for a large list-type slicer (e.g. a Customer field with
+              // 1000+ values), the internal clear can still be processing
+              // when the very next call tries to set real values, racing
+              // against itself. A small range slicer (e.g. a date) clears
+              // near-instantly and wouldn't show this; a long list would.
+              const toSkip = new Set(
+                  (armedSet.slicers || [])
+                      .filter(s => s.page === activeName)
+                      .map(s => s.visual)
+              );
+              await clearSlicersOnActivePage(toSkip);
+              await wait(250); // let the visual settle before re-setting its state
+              pagesToClear.delete(activeName);
+              nowApplied = await applyArmedForPage(activeName);
+          }
+
+          if (clean.length === 0 && slicers.length === 0) {
+              setMsg('Nothing in that saved view to apply.', true);
+          } else if (filterErr) {
+              setMsg('Applied ' + nowApplied + ' slicer(s); report filters failed: ' + filterErr, true);
+          } else {
+              setMsg('Applied saved view.');
+          }
+      }
+
+      async function clearSlicersOnActivePage(skipVisualNames) {
+          skipVisualNames = skipVisualNames || new Set();
+          let pages = [];
+          try { pages = await report.getPages(); } catch (e) { return 0; }
+          const page = pages.find(p => p.isActive);
+          if (!page) { return 0; }
+          let visuals = [];
+          try { visuals = await page.getVisuals(); } catch (e) { return 0; }
+          let cleared = 0;
+          for (const v of visuals) {
+              if (v.type !== 'slicer') { continue; }
+              if (skipVisualNames.has(v.name)) { continue; }
+              try { await v.setSlicerState({ filters: [] }); cleared++; }
+              catch (e) { /* skip */ }
+          }
+          delete slicerCache[page.name];
+          return cleared;
+      }
+
+      async function refreshCacheForActivePage() {
+          let pages = [];
+          try { pages = await report.getPages(); } catch (e) { return; }
+          const page = pages.find(p => p.isActive);
+          if (!page) { return; }
+          let visuals = [];
+          try { visuals = await page.getVisuals(); } catch (e) { return; }
+          const slicerVisuals = visuals.filter(v => v.type === 'slicer');
+          if (slicerVisuals.length === 0) {
+              // Remember so future sweeps skip this page entirely.
+              pagesWithNoSlicers.add(page.name);
+              slicerCache[page.name] = [];
+              visitedPages.add(page.name);
+              return;
+          }
+          const records = [];
+          for (const v of slicerVisuals) {
+              try {
+                  const state = await v.getSlicerState();
+                  const hasSel = state && state.filters && state.filters.length > 0;
+                  if (hasSel) {
+                      records.push({
+                          page: page.name,
+                          pageDisplayName: page.displayName || page.name,
+                          visual: v.name,
+                          visualTitle: v.title || '',
+                          state: state
+                      });
+                  }
+              } catch (e) { /* skip */ }
+          }
+          slicerCache[page.name] = records;
+          visitedPages.add(page.name);
+      }
+
+      // Sweep ONLY pages worth visiting:
+      //   - pages the customer has visited this session (the only ones that
+      //     could possibly have customer-made selections), and
+      //   - skip any page we've already confirmed has no slicer visuals.
+      // Activates each in turn, reads live slicer state, then returns the
+      // customer to their starting page. Hidden behind the overlay.
+      async function snapshotCurrentState() {
+          let filters = [];
+          try { filters = await report.getFilters(); } catch (e) {}
+          try { await refreshCacheForActivePage(); } catch (e) {}
+          const slicers = Object.values(slicerCache).flat();
+          return { filters, slicers };
+      }
+
+      const EXPORT_ROW_LIMIT = 3000; // change here to update the cap everywhere
+
+      const EXPORT_ALLOWED = new Set([
+          'deliveries report','deliveries by customer','deliveries by model','deliveries by region',
+          'orders report','orders by customer','orders by model','orders by region',
+          'flight hours by aircraft type','flight hours by engine','flight hours by airline',
+          'flight hours by msn','flight hours by manufacturer',
+          'top 10 borrowers 2025','top 10 mlas 2025','facility analysis','financier analysis',
+          'geographic analysis','top 5 mlas capital markets','top 5 mlas commercial',
+          'aircraft registry report','total aircraft by models and operators',
+          'total aircraft by owner','total aircraft by model',
+          'engine profile report','engine certification date by engine variant',
+          'deliveries by region (summary)','orders by region (summary)','deregistration score',
+          'repossiession score and categories by countries (summary)',
+          'co2 intensity, engine models, total deliveries, and total orders by airline (summary)',
+          'airline financials by airline (summary)'
+      ]);
+      let exportFmt = 'csv';
+
+      document.getElementById('fmtCsvBtn')?.addEventListener('click', () => {
+          exportFmt = 'csv';
+          document.getElementById('fmtCsvBtn').className  = 'btn';
+          document.getElementById('fmtXlsxBtn').className = 'btn ghost';
+      });
+      document.getElementById('fmtXlsxBtn')?.addEventListener('click', () => {
+          exportFmt = 'xlsx';
+          document.getElementById('fmtXlsxBtn').className = 'btn';
+          document.getElementById('fmtCsvBtn').className  = 'btn ghost';
+      });
+
+      function closeExportOverlay() {
+          const ov = document.getElementById('exportOverlay');
+          ov.classList.remove('show');
+          ov.setAttribute('aria-hidden', 'true');
+      }
+
+      function showExportWarning(count, proceedFn) {
+          const lim = EXPORT_ROW_LIMIT.toLocaleString();
+          document.getElementById('exportWarningLimit').textContent  = lim;
+          document.getElementById('exportWarningLimit2').textContent = lim;
+          document.getElementById('exportProceedLimit').textContent  = lim;
+          document.getElementById('exportVisualList').style.display = 'none';
+          document.getElementById('exportWarning').style.display   = '';
+          const ov = document.getElementById('exportOverlay');
+          ov.classList.add('show');
+          ov.setAttribute('aria-hidden', 'false');
+          const cleanup = () => {
+              document.getElementById('exportWarning').style.display   = 'none';
+              document.getElementById('exportVisualList').style.display = '';
+              // re-attach fresh listeners next time
+              document.getElementById('exportProceedBtn').replaceWith(
+                  document.getElementById('exportProceedBtn').cloneNode(true));
+              document.getElementById('exportBackBtn').replaceWith(
+                  document.getElementById('exportBackBtn').cloneNode(true));
+          };
+          document.getElementById('exportProceedBtn').addEventListener('click', () => {
+              cleanup(); closeExportOverlay(); proceedFn();
+          }, { once: true });
+          document.getElementById('exportBackBtn').addEventListener('click', () => {
+              cleanup();
+          }, { once: true });
+      }
+
+      function triggerDownload(blob, filename) {
+          const url = URL.createObjectURL(blob);
+          const a   = document.createElement('a');
+          a.href = url; a.download = filename; a.style.display = 'none';
+          document.body.appendChild(a); a.click();
+          document.body.removeChild(a); URL.revokeObjectURL(url);
+      }
+
+      async function doExport(visual, tableOverride) {
+          closeExportOverlay();
+          setMsg('Exporting…');
+          try {
+              const title = visual ? (visual.title || visual.name || 'export') : (tableOverride || 'export');
+
+              // ── Path 1: SDK exportData (exact visual columns + display names) ──
+              if (visual && !tableOverride) {
+                  try {
+                      // 0 = ExportDataType.Summarized — returns only the columns shown in the visual
+                      const result = await visual.exportData(0);
+                      if (result && result.data) {
+                          const lines     = result.data.split('\n');
+                          const header    = lines[0];
+                          const dataLines = lines.slice(1).filter(l => l.trim() !== '');
+
+                          const doDownloadPath1 = () => {
+                              const csvTrimmed = [header, ...dataLines.slice(0, EXPORT_ROW_LIMIT)].join('\n');
+                              if (exportFmt === 'xlsx') {
+                                  fetch('/api/export/convert', {
+                                      method: 'POST',
+                                      headers: {'Content-Type': 'application/json'},
+                                      body: JSON.stringify({csv_data: csvTrimmed, filename: title})
+                                  }).then(r => r.ok ? r.blob() : null).then(blob => {
+                                      if (blob) { triggerDownload(blob, title + '.xlsx'); }
+                                      setMsg('Exported (max ' + EXPORT_ROW_LIMIT.toLocaleString() + ' rows · Excel).');
+                                  });
+                              } else {
+                                  triggerDownload(new Blob([csvTrimmed], {type: 'text/csv'}), title + '.csv');
+                                  setMsg('Exported (max ' + EXPORT_ROW_LIMIT.toLocaleString() + ' rows · CSV).');
+                              }
+                          };
+
+                          if (dataLines.length > EXPORT_ROW_LIMIT) {
+                              showExportWarning(dataLines.length, doDownloadPath1);
+                          } else {
+                              doDownloadPath1();
+                          }
+                          return;
+                      }
+                  } catch(sdkErr) {
+                      // exportData blocked by tenant admin — fall through to server-side DAX
+                  }
+              }
+
+              // ── Path 2: Server-side DAX query (filtered, max 3,000 rows) ──
+              try { await refreshCacheForActivePage(); } catch(e) {}
+
+              let reportFilters = [];
+              let pageFilters   = [];
+              try { reportFilters = await report.getFilters(); } catch(e) {}
+              try {
+                  const pages = await report.getPages();
+                  const ap = pages.find(p => p.isActive);
+                  if (ap) { pageFilters = await ap.getFilters().catch(() => []); }
+              } catch(e) {}
+              const allSlicers = Object.values(slicerCache).flat();
+
+              const payload = {
+                  visual_title:   title,
+                  table_override: tableOverride || null,
+                  report_filters: [...reportFilters, ...pageFilters],
+                  slicer_states:  allSlicers,
+                  fmt:            exportFmt
+              };
+
+              // Check row count before downloading so we can warn if it exceeds 3,000
+              try {
+                  const cr = await fetch('/api/export/count', {
+                      method: 'POST',
+                      headers: {'Content-Type': 'application/json'},
+                      body: JSON.stringify(payload)
+                  });
+                  if (cr.ok) {
+                      const { count } = await cr.json();
+                      if (count && count > EXPORT_ROW_LIMIT) {
+                          showExportWarning(count, () => doDownloadPath2(payload));
+                          return;
+                      }
+                  }
+              } catch(e) { /* count check failed — proceed anyway */ }
+
+              await doDownloadPath2(payload);
+          } catch (e) {
+              setMsg('Export error: ' + (e.message || e), true);
+          }
+      }
+
+      async function doDownloadPath2(payload) {
+          const resp = await fetch('/api/export/data', {
+              method: 'POST',
+              headers: {'Content-Type': 'application/json'},
+              body: JSON.stringify(payload)
+          });
+          if (!resp.ok) {
+              let errMsg = 'Export failed';
+              try { const j = await resp.json(); errMsg = j.error || errMsg; } catch {}
+              setMsg(errMsg, true);
+              const ov = document.getElementById('exportOverlay');
+              ov.classList.add('show');
+              ov.setAttribute('aria-hidden', 'false');
+              const details = document.querySelector('#exportOverlay details');
+              if (details) { details.open = true; }
+              document.getElementById('exportTableInput')?.focus();
+              return;
+          }
+          const cd  = resp.headers.get('Content-Disposition') || '';
+          const fn  = (cd.match(/filename="([^"]+)"/) || [])[1] || 'export.csv';
+          triggerDownload(await resp.blob(), fn);
+          setMsg('Exported (max ' + EXPORT_ROW_LIMIT.toLocaleString() + ' rows · ' + (payload.fmt || 'csv').toUpperCase() + ').');
+      }
+
+      document.getElementById('exportBtn')?.addEventListener('click', async () => {
+          if (!report) { setMsg('Report not ready yet.', true); return; }
+
+          // Refresh cache so any slicer selections made since page load are captured
+          try { await refreshCacheForActivePage(); } catch(e) {}
+
+          const pages = await report.getPages().catch(() => []);
+          const activePage = pages.find(p => p.isActive);
+          if (!activePage) { return; }
+          const visuals = await activePage.getVisuals().catch(() => []);
+
+          // Show whitelisted visuals by title, PLUS any data-table visuals with no title
+          // (reports often use text-box overlays instead of built-in titles, leaving v.title empty)
+          const DATA_TYPES = new Set(['tableEx','matrix','pivotTable','table']);
+          const candidates = visuals.filter(v => {
+              const t = (v.title || '').trim().toLowerCase();
+              return t ? EXPORT_ALLOWED.has(t) : DATA_TYPES.has(v.type);
+          });
+
+          const list = document.getElementById('exportVisualList');
+          list.innerHTML = '';
+          if (candidates.length === 0) {
+              const p = document.createElement('p');
+              p.style.cssText = 'color:#6c757d;font-size:13px;margin:4px 0;';
+              p.textContent = 'No data visuals found — use the manual override below.';
+              list.appendChild(p);
+          } else {
+              for (const v of candidates) {
+                  const btn = document.createElement('button');
+                  btn.className = 'btn ghost';
+                  btn.style.cssText = 'text-align:left;justify-content:flex-start;width:100%;';
+                  btn.textContent = v.title || v.name || v.type;
+                  btn.addEventListener('click', () => doExport(v, null));
+                  list.appendChild(btn);
+              }
+          }
+
+          // Check if we can auto-detect the table name; if not, expand the override input
+          const pageFilters  = await activePage.getFilters().catch(() => []);
+          const reportFilters = await report.getFilters().catch(() => []);
+          const activeSlicers = Object.values(slicerCache).flat();
+          const hasContext = reportFilters.length > 0 || pageFilters.length > 0 || activeSlicers.length > 0;
+          const details = document.querySelector('#exportOverlay details');
+          if (details) {
+              if (!hasContext) {
+                  details.open = true;
+                  // Pre-fill with the page display name as a starting hint
+                  const inp = document.getElementById('exportTableInput');
+                  if (inp && !inp.value) { inp.placeholder = activePage.displayName || activePage.name; }
+              } else {
+                  details.open = false;
+              }
+          }
+
+          document.getElementById('exportOverlayLimit').textContent =
+              '(max ' + EXPORT_ROW_LIMIT.toLocaleString() + ' rows · filters applied)';
+          const ov = document.getElementById('exportOverlay');
+          ov.classList.add('show');
+          ov.setAttribute('aria-hidden', 'false');
+      });
+
+      document.getElementById('exportRunBtn')?.addEventListener('click', () => {
+          const t = (document.getElementById('exportTableInput')?.value || '').trim();
+          if (!t) { setMsg('Enter a table name.', true); return; }
+          doExport(null, t);
+      });
+      document.getElementById('exportTableInput')?.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { document.getElementById('exportRunBtn').click(); }
+      });
+
+
+      async function captureSlicers() {
+          const out = [];
+          const originalPage = await getActivePageName();
+          let allPages = [];
+          try { allPages = await report.getPages(); } catch (e) { return out; }
+
+          // Make sure the current active page counts as "visited" so a Save
+          // immediately after login still picks up the page in front of the
+          // customer even if they haven't navigated yet.
+          if (originalPage) { visitedPages.add(originalPage); }
+
+          const candidates = allPages.filter(p =>
+              visitedPages.has(p.name) && !pagesWithNoSlicers.has(p.name));
+
+          if (candidates.length === 0) { return out; }
+
+          let idx = 0;
+          for (const p of candidates) {
+              idx++;
+              updateOverlaySub('Reading page ' + idx + ' of ' + candidates.length +
+                  ' — ' + (p.displayName || p.name));
+              const live = await activatePageByName(p.name);
+              if (!live) { continue; }
+              let visuals = [];
+              try { visuals = await live.getVisuals(); } catch (e) { continue; }
+              const slicerVisuals = visuals.filter(v => v.type === 'slicer');
+              if (slicerVisuals.length === 0) {
+                  // Remember so we never bother sweeping this page again.
+                  pagesWithNoSlicers.add(live.name);
+                  continue;
+              }
+              const records = [];
+              for (const v of slicerVisuals) {
+                  try {
+                      const state = await v.getSlicerState();
+                      const hasSel = state && state.filters && state.filters.length > 0;
+                      if (hasSel) {
+                          records.push({
+                              page: live.name,
+                              pageDisplayName: live.displayName || live.name,
+                              visual: v.name,
+                              visualTitle: v.title || '',
+                              state: state
+                          });
+                      }
+                  } catch (e) { /* visual doesn't expose state — skip */ }
+              }
+              slicerCache[live.name] = records;
+              for (const r of records) { out.push(r); }
+          }
+
+          // Put the customer back where they started.
+          if (originalPage) {
+              try { await activatePageByName(originalPage); } catch (e) { /* ignore */ }
+          }
+          return out;
+      }
+
+      async function saveCurrentFilters() {
+          const name = document.getElementById('filterName').value.trim();
+          if (!name) { setMsg('Give the view a name.', true); return; }
+          if (!report) { setMsg('Report not ready yet.', true); return; }
+
+          const select = document.getElementById('savedSelect');
+          const taken = Array.from(select.options)
+              .filter(o => o.value)
+              .map(o => o.textContent.replace(/\s+\(\d+ pages?\)\s*$/, '').trim());
+          if (taken.includes(name)) {
+              if (!confirm('"' + name + '" already exists. Overwrite it?')) { return; }
+          }
+
+          // Show the overlay before the page sweep so the customer never sees
+          // the report flipping between pages while we read slicer state.
+          showOverlay('Saving filters as “' + name + '”…',
+                      'Reading slicer selections from every page.');
+          try {
+              let filters = [];
+              try { filters = await report.getFilters(); } catch (e) { filters = []; }
+              let slicers = [];
+              try { slicers = await captureSlicers(); } catch (e) { slicers = []; }
+
+              if ((!filters || filters.length === 0) && slicers.length === 0) {
+                  setMsg('Nothing selected to save.', true);
+                  return;
+              }
+
+              updateOverlaySub('Storing on the server…');
+              const payload = { filters: filters, slicers: slicers };
+              const res = await fetch('/api/filters', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ name: name, filters: payload })
+              });
+              const data = await res.json();
+              if (data.success) {
+                  document.getElementById('filterName').value = '';
+                  setMsg('Saved “' + name + '” (' + slicers.length + ' slicer(s) across ' +
+                         (new Set(slicers.map(s => s.page)).size) + ' page(s)).');
+                  await loadSavedList(name);
+              } else {
+                  setMsg('Save failed: ' + (data.error || 'unknown'), true);
+              }
+          } finally {
+              hideOverlay();
+          }
+      }
+
+      // Populate the dropdown. If preselectName given, select that one.
+      async function loadSavedList(preselectName) {
+          const select = document.getElementById('savedSelect');
+          const res = await fetch('/api/filters');
+          if (!res.ok) { return; }
+          const data = await res.json();
+          const sets = (data.filters || []).sort((a, b) => b.saved_at - a.saved_at);
+
+          // wipe existing options
+          while (select.options.length > 0) { select.remove(0); }
+          const placeholder = document.createElement('option');
+          placeholder.value = '';
+          placeholder.textContent = sets.length === 0 ? '— no saved views —' : '— select a saved view —';
+          select.appendChild(placeholder);
+
+          sets.forEach(s => {
+              const opt = document.createElement('option');
+              opt.value = s.id;
+              const norm = Array.isArray(s.filters) ? { slicers: [] } : (s.filters || {});
+              const pageCount = new Set((norm.slicers || []).map(x => x.page)).size;
+              opt.textContent = s.name + (pageCount ? '  (' + pageCount + ' page' + (pageCount === 1 ? '' : 's') + ')' : '');
+              opt.dataset.payload = JSON.stringify(s.filters);
+              select.appendChild(opt);
+              if (preselectName && s.name === preselectName) { opt.selected = true; }
+          });
+      }
+
+      // Apply on dropdown change
+      document.getElementById('savedSelect')?.addEventListener('change', (e) => {
+          const opt = e.target.selectedOptions[0];
+          if (!opt || !opt.value) { return; }
+          try {
+              const payload = JSON.parse(opt.dataset.payload || 'null');
+              preClearSnapshot = null;
+              inClearedState = false;
+              updateNavButtons();
+              applyFilters(payload);
+          } catch (err) {
+              setMsg('Could not read saved view.', true);
+          }
+      });
+
+      // Delete the currently-selected saved view
+      document.getElementById('deleteBtn')?.addEventListener('click', async () => {
+          const select = document.getElementById('savedSelect');
+          const opt = select.selectedOptions[0];
+          if (!opt || !opt.value) { setMsg('Pick a saved view to delete.', true); return; }
+          const name = opt.textContent.replace(/\s*\(\d+ pages?\)\s*$/, '');
+          if (!confirm('Delete saved view “' + name + '”?')) { return; }
+          await fetch('/api/filters/' + opt.value, { method: 'DELETE' });
+          setMsg('Deleted “' + name + '”.');
+          await loadSavedList();
+      });
+
+      // Save button + Enter on name field
+      document.getElementById('saveFilterBtn')?.addEventListener('click', saveCurrentFilters);
+      document.getElementById('filterName')?.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { saveCurrentFilters(); }
+      });
+
+      // Clear-all: show a confirmation dialog first, then sweep on confirm.
+      document.getElementById('clearAllBtn')?.addEventListener('click', () => {
+          if (!report) { setMsg('Report not ready yet.', true); return; }
+          const ov = document.getElementById('clearConfirmOverlay');
+          ov.classList.add('show');
+          ov.setAttribute('aria-hidden', 'false');
+      });
+
+      document.getElementById('clearConfirmBtn')?.addEventListener('click', async () => {
+          const ov = document.getElementById('clearConfirmOverlay');
+          ov.classList.remove('show');
+          ov.setAttribute('aria-hidden', 'true');
+          preClearSnapshot = await snapshotCurrentState();
+          inClearedState = true;
+          updateNavButtons();
+          showOverlay('Clearing all filters…', 'Resetting selections on every visited page.');
+          try {
+              // 1. Clear report-level filters (right-hand Filters pane, if any).
+              try { await report.setFilters([]); } catch (e) { /* ignore */ }
+
+              // 2. Disarm any active saved view so pageChanged doesn't re-apply.
+              armedSet = null;
+              armedAppliedPages = new Set();
+              pagesToClear = new Set();
+
+              // 3. Remember where the customer is so we put them back at the end.
+              const originalPage = await getActivePageName();
+
+              // 4. Walk only pages worth wiping — visited pages that could
+              //    have selections, skipping pages we've confirmed have no
+              //    slicer visuals at all.
+              const toWipe = Array.from(new Set([
+                  ...Object.keys(slicerCache),
+                  ...Array.from(visitedPages)
+              ])).filter(n => !pagesWithNoSlicers.has(n));
+
+              let idx = 0;
+              for (const pageName of toWipe) {
+                  idx++;
+                  updateOverlaySub('Clearing page ' + idx + ' of ' + toWipe.length);
+                  const live = await activatePageByName(pageName);
+                  if (!live) { continue; }
+                  await clearSlicersOnActivePage();   // also drops slicerCache[pageName]
+              }
+
+              // 5. Return the customer to where they started.
+              updateOverlaySub('Returning to your page…');
+              if (originalPage) {
+                  try { await activatePageByName(originalPage); } catch (e) { /* ignore */ }
+              }
+
+              // 6. Reset the dropdown selection back to the placeholder.
+              const select = document.getElementById('savedSelect');
+              if (select) { select.selectedIndex = 0; }
+
+              setMsg('All filters cleared.');
+          } catch (e) {
+              console.error('[clearAll] failed', e);
+              setMsg('Clear failed: ' + (e.message || e), true);
+          } finally {
+              hideOverlay();
+          }
+      });
+
+      document.getElementById('clearCancelBtn')?.addEventListener('click', () => {
+          const ov = document.getElementById('clearConfirmOverlay');
+          ov.classList.remove('show');
+          ov.setAttribute('aria-hidden', 'true');
+      });
+
+      // -------------------- Visualise: chat -> filter ----------------------
+      // Separate feature from chatPowerBI's own in-report chat. Scans this
+      // report's slicers for valid {table, column} pairs (the field
+      // registry), then lets a /visualise request be turned into a real
+      // filter - applied through the existing applyFilters().
+      async function harvestReportFields() {
+          if (!report) { setMsg('Report not ready yet.', true); return; }
+          showOverlay('Scanning report fields…', 'Walking each page\'s slicers.');
+          const collected = [];
+          try {
+              const pages = await report.getPages();
+              let idx = 0;
+              for (const p of pages) {
+                  idx++;
+                  updateOverlaySub('Page ' + idx + ' of ' + pages.length + ' — ' + (p.displayName || p.name));
+                  let live = p;
+                  try {
+                      if (!p.isActive) { live = await activatePageByName(p.name) || p; await wait(300); }
+                  } catch (e) { /* use p as-is */ }
+                  let visuals = [];
+                  try { visuals = await live.getVisuals(); } catch (e) { continue; }
+                  const slicers = visuals.filter(v => v.type === 'slicer');
+                  for (const v of slicers) {
+                      try {
+                          const state = await v.getSlicerState();
+                          const targets = (state && state.targets && state.targets.length)
+                              ? state.targets
+                              : ((state && state.filters && state.filters[0] && state.filters[0].target)
+                                  ? [state.filters[0].target] : []);
+                          for (const t of targets) {
+                              if (t && t.table && t.column) {
+                                  collected.push({
+                                      table: t.table,
+                                      column: t.column,
+                                      displayName: v.title || '',
+                                      page: live.name,
+                                      visual: v.name
+                                  });
+                              }
+                          }
+                      } catch (e) { /* skip this visual */ }
+                  }
+              }
+          } catch (e) {
+              hideOverlay();
+              setMsg('Could not scan report fields: ' + (e.message || e), true);
+              return;
+          }
+          hideOverlay();
+          if (collected.length === 0) {
+              setMsg('No slicer fields found to sync.', true);
+              return;
+          }
+          try {
+              const res = await fetch('/api/fields/sync', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ fields: collected })
+              });
+              const data = await res.json();
+              if (!res.ok || !data.success) { throw new Error(data.error || 'Sync failed'); }
+              setMsg('Synced ' + data.fields.length + ' field(s) (' + data.added + ' new).');
+          } catch (e) {
+              setMsg('Field sync failed: ' + (e.message || e), true);
+          }
+      }
+
+      function showVisualiseReply(text) {
+          const el = document.getElementById('visualiseReply');
+          const textEl = document.getElementById('visualiseReplyText');
+          if (!text) { el.classList.add('hidden'); textEl.textContent = ''; return; }
+          textEl.textContent = text;
+          el.classList.remove('hidden');
+      }
+      document.getElementById('visualiseResetLink')?.addEventListener('click', async (e) => {
+          e.preventDefault();
+          showVisualiseReply('');
+          document.getElementById('visualiseInput').value = '';
+          try { await fetch('/api/visualise/reset', { method: 'POST' }); } catch (e) { /* ignore */ }
+      });
+
+      // Ambiguous /visualise request popup - a request too unclear to
+      // resolve shows this instead of the quiet reply banner, so it's hard
+      // to miss. When the backend found a confident best-guess page (from
+      // either the model's own hint or distinctive-word table matching),
+      // it also offers a direct "Go to X" jump.
+      function hideAmbiguousPopup() {
+          document.getElementById('ambiguousPopup')?.classList.add('hidden');
+      }
+      function showAmbiguousPopup(message, suggestedPage, suggestedPageName) {
+          document.getElementById('ambiguousMsg').textContent = message || 'Could you rephrase that?';
+          const goBtn = document.getElementById('ambiguousGoBtn');
+          if (suggestedPage && suggestedPageName) {
+              document.getElementById('ambiguousPageName').textContent = suggestedPageName;
+              goBtn.classList.remove('hidden');
+              goBtn.dataset.page = suggestedPage;
+          } else {
+              goBtn.classList.add('hidden');
+              delete goBtn.dataset.page;
+          }
+          document.getElementById('ambiguousPopup')?.classList.remove('hidden');
+      }
+      document.addEventListener('click', (e) => {
+          const popup = document.getElementById('ambiguousPopup');
+          if (popup && !popup.classList.contains('hidden') &&
+              !popup.contains(e.target) && e.target.id !== 'visualiseBtn' && e.target.id !== 'visualiseInput') {
+              hideAmbiguousPopup();
+          }
+      });
+      document.getElementById('ambiguousDismissBtn')?.addEventListener('click', () => {
+          hideAmbiguousPopup();
+          document.getElementById('visualiseInput')?.focus();
+      });
+      document.getElementById('ambiguousGoBtn')?.addEventListener('click', async () => {
+          const page = document.getElementById('ambiguousGoBtn').dataset.page;
+          hideAmbiguousPopup();
+          if (page) {
+              try { await activatePageByName(page); } catch (e) { /* stay put */ }
+              try { await fetch('/api/visualise/reset', { method: 'POST' }); } catch (e) { /* ignore */ }
+              document.getElementById('visualiseInput').value = '';
+          }
+      });
+
+      function describeFilter(f, slicerTargets) {
+          if (!f || !f.target) { return ''; }
+          const key = f.target.table + '.' + f.target.column;
+          // A condition only in "filters" (no matching slicer) is still
+          // correctly filtering the data - it just won't move any visible
+          // control, since no slicer is bound to that field.
+          const liveTag = slicerTargets && slicerTargets.has(key) ? '' : ' [data only, no slicer]';
+          if (Array.isArray(f.values)) {
+              return f.target.column + ' = ' + f.values.join(', ') + liveTag;
+          }
+          if (Array.isArray(f.conditions)) {
+              const lo = f.conditions.find(c => c.operator === 'GreaterThanOrEqual');
+              const hi = f.conditions.find(c => c.operator === 'LessThanOrEqual');
+              if (lo && hi) { return f.target.column + ' between ' + lo.value + ' and ' + hi.value + liveTag; }
+          }
+          return f.target.column + ' filtered' + liveTag;
+      }
+
+      // A new /visualise request only ever describes the condition(s) it's
+      // about - it should ADD to whatever's already filtered, not wipe it
+      // out. Merge against the currently-armed state, with the new request
+      // winning only for the specific table/column it touches.
+      function mergeFilterResponse(newData) {
+          const keyOf = (t) => t && t.table ? (t.table + '.' + t.column) : null;
+          const slicerKeyOf = (s) => {
+              const t = (s.state.targets && s.state.targets[0]) ||
+                        (s.state.filters && s.state.filters[0] && s.state.filters[0].target);
+              return keyOf(t);
+          };
+
+          const prevFilters = (armedSet && armedSet.filters) || [];
+          const prevSlicers = (armedSet && armedSet.slicers) || [];
+
+          const newFilterKeys = new Set((newData.filters || []).map(f => keyOf(f.target)));
+          const keptFilters = prevFilters.filter(f => !newFilterKeys.has(keyOf(f.target)));
+
+          const newSlicerKeys = new Set((newData.slicers || []).map(slicerKeyOf).filter(Boolean));
+          const keptSlicers = prevSlicers.filter(s => {
+              const k = slicerKeyOf(s);
+              return k && !newSlicerKeys.has(k);
+          });
+
+          return {
+              filters: [...keptFilters, ...(newData.filters || [])],
+              slicers: [...keptSlicers, ...(newData.slicers || [])],
+          };
+      }
+
+      async function sendVisualise() {
+          const inputEl = document.getElementById('visualiseInput');
+
+          // Accept a leading "/visualise" out of habit, but it's not required -
+          // this box is already dedicated to filter requests.
+          const message = (inputEl.value || '').trim().replace(/^\/visualise\s*/i, '');
+          if (!message) { return; }
+
+          // Natural-language clear/reset - deterministic, no LLM round-trip.
+          if (/^(clear|reset)( all)?( the)?( filters?)?$|^show (me )?everything$|^remove all filters?$/i.test(message)) {
+              document.getElementById('clearConfirmBtn')?.click();
+              showVisualiseReply('Cleared all filters.');
+              inputEl.value = '';
+              return;
+          }
+
+          // Diagnostic: "debug page" dumps every visual's REAL type on the
+          // current page (not just ones already classified as 'slicer') to
+          // the backend log, so a mystery like "why does this page have no
+          // detected slicers" can be answered with real evidence.
+          if (/^debug( the)? page$/i.test(message)) {
+              inputEl.value = '';
+              if (!report) { showVisualiseReply('Report not ready yet.'); return; }
+              try {
+                  const pages = await report.getPages();
+                  const page = pages.find(p => p.isActive);
+                  const visuals = page ? await page.getVisuals() : [];
+                  const dump = visuals.map(v => ({ name: v.name, type: v.type, title: v.title }));
+                  await fetch('/api/debug/log', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ page: page ? page.displayName || page.name : null, visuals: dump })
+                  });
+                  showVisualiseReply('Logged ' + dump.length + ' visual(s) on this page for inspection.');
+              } catch (e) {
+                  showVisualiseReply('Debug dump failed: ' + (e.message || e));
+              }
+              return;
+          }
+
+          const btn = document.getElementById('visualiseBtn');
+          btn.disabled = true;
+          showVisualiseReply('Thinking…');
+          try {
+              const res = await fetch('/api/visualise', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ message })
+              });
+              const data = await res.json();
+              if (data.clarify) {
+                  showVisualiseReply('');
+                  showAmbiguousPopup(data.clarify, data.suggested_page, data.suggested_page_name);
+                  return;
+              }
+              if (data.navigated_only) {
+                  const pages = data.pages || [];
+                  if (pages.length) {
+                      try { await activatePageByName(pages[0]); } catch (e) { /* stay put */ }
+                      setMsg('Navigated.');
+                  }
+                  showVisualiseReply('');
+                  inputEl.value = '';
+                  return;
+              }
+
+              if (data.filters) {
+                  const merged = mergeFilterResponse(data);
+                  const pages = data.pages || [];
+
+                  // Navigate BEFORE applying. applyFilters() only drives
+                  // setSlicerState for whichever page is active at the
+                  // moment it runs - applying first and navigating after
+                  // means the destination page's slicers only get set via
+                  // the async pageChanged event afterward, which visibly
+                  // lags behind this function returning (that lag is what
+                  // "selections happening but not showing" was).
+                  if (pages.length) {
+                      try { await activatePageByName(pages[0]); } catch (e) { /* stay put */ }
+                  }
+                  await applyFilters(merged);
+
+                  const slicerTargets = new Set(
+                      (data.slicers || []).flatMap(s => (s.state.targets || []).map(t => t.table + '.' + t.column))
+                  );
+                  // Slicer-driven conditions no longer also appear in
+                  // data.filters (fixed so they don't fight each other) -
+                  // describe them here too, or the confirmation message
+                  // silently omits anything that went through a slicer.
+                  const describable = [
+                      ...data.filters,
+                      ...(data.slicers || []).map(s => s.state.filters[0]).filter(Boolean)
+                  ];
+                  const desc = describable.map(f => describeFilter(f, slicerTargets)).filter(Boolean).join('; ');
+                  if (desc) { setMsg('Filtered: ' + desc); }
+
+                  if (pages.length) {
+                      showVisualiseReply('');
+                  } else {
+                      showVisualiseReply(
+                          'Applied' + (desc ? ' (' + desc + ')' : '') + ', but I don\'t know which '
+                          + 'page shows this on - the data is filtered, you may just need to '
+                          + 'navigate there yourself to see it.'
+                      );
+                  }
+                  inputEl.value = '';
+                  return;
+              }
+              showVisualiseReply('Unexpected response from Visualise.');
+          } catch (e) {
+              showVisualiseReply('Visualise failed: ' + (e.message || e));
+          } finally {
+              btn.disabled = false;
+          }
+      }
+      document.getElementById('visualiseBtn')?.addEventListener('click', sendVisualise);
+      document.getElementById('visualiseInput')?.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { sendVisualise(); }
+      });
+
+      // On first load when signed in: load list and queue auto-apply of most recent
+      if (isLoggedIn) {
+          (async () => {
+              const res = await fetch('/api/filters');
+              if (res.ok) {
+                  const data = await res.json();
+                  const sets = (data.filters || []).sort((a, b) => b.saved_at - a.saved_at);
+                  await loadSavedList();
+                  if (sets.length > 0) {
+                      pendingFilters = sets[0].filters;
+                      // Preselect the most-recent in the dropdown so users see what's applied
+                      const sel = document.getElementById('savedSelect');
+                      for (const o of sel.options) {
+                          if (o.value === sets[0].id) { o.selected = true; break; }
+                      }
+                  }
+              }
+          })();
+      }
+  </script>
+</body>
+</html>

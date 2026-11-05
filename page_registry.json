@@ -1,0 +1,233 @@
+{
+  "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7": [
+    {
+      "name": "bee95b7880d7e451c2db",
+      "displayName": "Summary",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "9df7d1bb4497ff75fbbd",
+      "displayName": "Deliveries",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "0a05b7abd1bc02f89267",
+      "displayName": "Orders",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "b9cea888adbfc6dd7617",
+      "displayName": "Aircraft Utilisation",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "099739e2d6652933ea05",
+      "displayName": "Aviation Finance",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "7bb6a1e1168b7d341ecd",
+      "displayName": "Airline Financials",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "8fd9f44815fb792a0228",
+      "displayName": "Market Value / Lease Rates",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "f1125916d112f831abb1",
+      "displayName": "Emissions",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "cb4c3a6126d5f60c2259",
+      "displayName": "Aircraft Registry",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "c95fa81ce6609ed96d84",
+      "displayName": "Engine Profile",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "2608388233f414c008ff",
+      "displayName": "Jurisdiction Risk",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "8f90739153e778d56d3c",
+      "displayName": "Disclaimer",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "98575931bba312e7ad5c",
+      "displayName": "AR_Graphs",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "accd1d87c052e8b06870",
+      "displayName": "BS and PL",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "73789457271c9b8020de",
+      "displayName": "Aircraft Specifics",
+      "hidden_from_nav": false
+    }
+  ],
+  "14a8d602-cf61-4831-a55a-0229835f900f::601272cd-3fab-4cd2-93a5-1f9c7c152558": [
+    {
+      "name": "bee95b7880d7e451c2db",
+      "displayName": "Summary",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "9df7d1bb4497ff75fbbd",
+      "displayName": "Deliveries",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "0a05b7abd1bc02f89267",
+      "displayName": "Orders",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "b9cea888adbfc6dd7617",
+      "displayName": "Aircraft Utilisation",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "099739e2d6652933ea05",
+      "displayName": "Aviation Finance",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "7bb6a1e1168b7d341ecd",
+      "displayName": "Airline Financials",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "8fd9f44815fb792a0228",
+      "displayName": "Market Value / Lease Rates",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "f1125916d112f831abb1",
+      "displayName": "Emissions",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "cb4c3a6126d5f60c2259",
+      "displayName": "Aircraft Registry",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "c95fa81ce6609ed96d84",
+      "displayName": "Engine Profile",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "2608388233f414c008ff",
+      "displayName": "Jurisdiction Risk",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "8f90739153e778d56d3c",
+      "displayName": "Disclaimer",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "98575931bba312e7ad5c",
+      "displayName": "AR_Graphs",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "accd1d87c052e8b06870",
+      "displayName": "BS and PL",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "73789457271c9b8020de",
+      "displayName": "Aircraft Specifics",
+      "hidden_from_nav": false
+    }
+  ],
+  "8578855e-dbb3-47b0-b302-437d8572a9a3::bfecbfc9-b819-41b6-94c2-17aa94e3c7bd": [
+    {
+      "name": "bee95b7880d7e451c2db",
+      "displayName": "Summary",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "9df7d1bb4497ff75fbbd",
+      "displayName": "Deliveries",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "0a05b7abd1bc02f89267",
+      "displayName": "Orders",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "b9cea888adbfc6dd7617",
+      "displayName": "Aircraft Utilisation",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "099739e2d6652933ea05",
+      "displayName": "Aviation Finance",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "7bb6a1e1168b7d341ecd",
+      "displayName": "Airline Financials",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "8fd9f44815fb792a0228",
+      "displayName": "Market Value / Lease Rates",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "f1125916d112f831abb1",
+      "displayName": "Emissions",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "cb4c3a6126d5f60c2259",
+      "displayName": "Aircraft Registry",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "c95fa81ce6609ed96d84",
+      "displayName": "Engine Profile",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "2608388233f414c008ff",
+      "displayName": "Jurisdiction Risk",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "8f90739153e778d56d3c",
+      "displayName": "Disclaimer",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "98575931bba312e7ad5c",
+      "displayName": "AR_Graphs",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "accd1d87c052e8b06870",
+      "displayName": "BS and PL",
+      "hidden_from_nav": false
+    },
+    {
+      "name": "73789457271c9b8020de",
+      "displayName": "Aircraft Specifics",
+      "hidden_from_nav": false
+    }
+  ]
+}

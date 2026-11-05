@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation News - Power BI Embedded Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.0/dist/powerbi.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #0078d4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .status {
+            padding: 15px;
+            margin: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .status.loading {
+            background: #fff4e6;
+            color: #663c00;
+            border: 1px solid #ffd700;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        #powerbi-container {
+            width: 100%;
+            height: 700px;
+            border: none;
+            margin: 0;
+        }
+        .debug-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .controls {
+            padding: 15px;
+            margin: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0069b9;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            color: #6c757d;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Aviation News - Power BI Embedded Demo</h1>
+            <p>GitHub Pages Integration</p>
+        </div>
+        
+        <div class="controls">
+            <h3>🔧 Backend Configuration</h3>
+            <p>Enter the URL of your Flask backend:</p>
+            <input type="text" id="backend-url" placeholder="e.g., http://your-server:8080" value="http://localhost:8080">
+            <button id="connect-btn">Connect to Backend</button>
+        </div>
+        
+        <div id="status" class="status loading">
+            ⏳ Please connect to your backend server to view the Power BI report...
+        </div>
+        
+        <div class="debug-info" id="debug-info">
+            <strong>🔧 Setup Instructions:</strong><br>
+            1. Make sure your Flask backend is running<br>
+            2. Enter the backend URL in the input field above<br>
+            3. Click "Connect to Backend"<br>
+            4. The Power BI report will load below if successful<br><br>
+            
+            <strong>📋 Repository:</strong> <a href="https://github.com/Aviation-News/pbi_implementation" target="_blank">https://github.com/Aviation-News/pbi_implementation</a>
+        </div>
+        
+        <div id="powerbi-container"></div>
+        
+        <div class="footer">
+            &copy; 2025 Aviation News | Powered by Power BI Embedded | <a href="https://github.com/Aviation-News/pbi_implementation" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <script>
+        const statusDiv = document.getElementById('status');
+        const debugInfo = document.getElementById('debug-info');
+        const connectBtn = document.getElementById('connect-btn');
+        const backendUrlInput = document.getElementById('backend-url');
+        const embedContainer = document.getElementById('powerbi-container');
+
+        // Function to update debug info
+        function updateDebugInfo(info) {
+            debugInfo.innerHTML = `<strong>🔧 Debug Info:</strong><br>${info}`;
+        }
+
+        // Function to update status
+        function updateStatus(message, type = 'loading') {
+            statusDiv.className = `status ${type}`;
+            statusDiv.innerHTML = message;
+        }
+
+        // Function to connect to backend and get embed token
+        function connectToBackend() {
+            const backendUrl = backendUrlInput.value.trim();
+            if (!backendUrl) {
+                updateStatus('❌ Please enter a valid backend URL', 'error');
+                return;
+            }
+
+            updateStatus('⏳ Connecting to backend...', 'loading');
+            updateDebugInfo(`• Attempting to connect to: ${backendUrl}/get-embed-token`);
+
+            // Fetch the embed token from the token endpoint
+            fetch(`${backendUrl}/get-embed-token`)
+                .then(response => {
+                    console.log('Response status:', response.status);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('API Response:', data);
+                    if (data.success) {
+                        updateStatus('✅ Connected to backend! Loading report...', 'success');
+                        
+                        // Update debug info
+                        updateDebugInfo(
+                            `• Report ID: ${data.reportId}<br>` +
+                            `• Token Length: ${data.token.length} characters<br>` +
+                            `• Embed URL: ${data.embedUrl.substring(0, 60)}...<br>` +
+                            `• Connected to: ${backendUrl}<br>` +
+                            `• Status: Ready to display report`
+                        );
+                        
+                        // Embed the Power BI report
+                        embedPowerBIReport(data.reportId, data.embedUrl, data.token);
+                    } else {
+                        throw new Error(data.error || 'Unknown error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    updateStatus(`❌ Error connecting to backend: ${error.message}`, 'error');
+                    updateDebugInfo(
+                        `• Error: ${error.message}<br>` +
+                        `• Please check if your backend is running and accessible.<br>` +
+                        `• Make sure you're using the updated version of app.py with the /get-embed-token endpoint.<br>` +
+                        `• Verify that CORS is enabled for ${window.location.origin} on your backend.<br>` +
+                        `• Check that your Power BI credentials are valid.`
+                    );
+                });
+        }
+
+        // Function to embed the Power BI report
+        function embedPowerBIReport(reportId, embedUrl, accessToken) {
+            console.log('🔧 Attempting to embed report...');
+            
+            const config = {
+                type: 'report',
+                id: reportId,
+                embedUrl: embedUrl,
+                accessToken: accessToken,
+                tokenType: 1,  // Embed token
+                settings: {
+                    filterPaneEnabled: true,
+                    navContentPaneEnabled: true,
+                    panes: {
+                        filters: {
+                            expanded: false,
+                            visible: true
+                        },
+                        pageNavigation: {
+                            visible: true
+                        }
+                    }
+                }
+            };
+            
+            console.log('📋 Config prepared:', {
+                reportId: config.id,
+                embedUrlPreview: config.embedUrl.substring(0, 50) + '...',
+                tokenLength: config.accessToken.length,
+                tokenType: config.tokenType
+            });
+            
+            try {
+                const report = powerbi.embed(embedContainer, config);
+                
+                // Handle successful load
+                report.on('loaded', () => {
+                    console.log('✅ Report loaded successfully');
+                    updateStatus('✅ Report loaded successfully!', 'success');
+                });
+                
+                // Handle successful render
+                report.on('rendered', () => {
+                    console.log('✅ Report rendered successfully');
+                    updateStatus('✅ Report is now fully rendered and interactive!', 'success');
+                });
+                
+                // Handle errors
+                report.on('error', (event) => {
+                    const error = event.detail;
+                    console.error('❌ Power BI Error:', error);
+                    updateStatus(`❌ Error: ${error.message || JSON.stringify(error)}`, 'error');
+                });
+                
+            } catch (error) {
+                console.error('❌ Embed initialization failed:', error);
+                updateStatus(`❌ Embed Error: ${error.message}`, 'error');
+            }
+        }
+
+        // Event listener for connect button
+        connectBtn.addEventListener('click', connectToBackend);
+    </script>
+</body>
+</html>

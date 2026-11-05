@@ -1,0 +1,3518 @@
+{
+  "sachinbabuantony@gmail.com": {
+    "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7": [
+      {
+        "id": "302b14b6cdc0449c871b3e5cb29e521a",
+        "name": "test",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A21N",
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A",
+                      "767-2C"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779788007,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "2d9cf47908d84d93a9d922704ad74a2e",
+        "name": "test2",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A21N",
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A",
+                      "767-2C"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Central Asia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "6af26030fa28947221a4",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A318",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "099739e2d6652933ea05",
+              "pageDisplayName": "Aviation Finance",
+              "visual": "90eaf4e5bd3cf0a83dd7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86a56cbe567d5788b6c0",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A318",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779788121,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "9e00fa4c72dc48cdbaa6a521772835ef",
+        "name": "test123",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "2fd5042338d558ccfa58",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Albania",
+                      "Algeria",
+                      "Armenia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780501172,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "7b8a9a497c02420e8117e60d47d59d91",
+        "name": "test123455",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Asia-Pacific"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "98575931bba312e7ad5c",
+              "pageDisplayName": "AR_Graphs",
+              "visual": "c09d04b7ed28e633bc8c",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780921713,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ],
+    "14a8d602-cf61-4831-a55a-0229835f900f::601272cd-3fab-4cd2-93a5-1f9c7c152558": [
+      {
+        "id": "302b14b6cdc0449c871b3e5cb29e521a",
+        "name": "test",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A21N",
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A",
+                      "767-2C"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779788007,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "2d9cf47908d84d93a9d922704ad74a2e",
+        "name": "test2",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A21N",
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A",
+                      "767-2C"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Central Asia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "6af26030fa28947221a4",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A318",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "099739e2d6652933ea05",
+              "pageDisplayName": "Aviation Finance",
+              "visual": "90eaf4e5bd3cf0a83dd7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86a56cbe567d5788b6c0",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A318",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779788121,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "9e00fa4c72dc48cdbaa6a521772835ef",
+        "name": "test123",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "2fd5042338d558ccfa58",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Albania",
+                      "Algeria",
+                      "Armenia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780501172,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "7b8a9a497c02420e8117e60d47d59d91",
+        "name": "test123455",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Asia-Pacific"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "98575931bba312e7ad5c",
+              "pageDisplayName": "AR_Graphs",
+              "visual": "c09d04b7ed28e633bc8c",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780921713,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ],
+    "8578855e-dbb3-47b0-b302-437d8572a9a3::bfecbfc9-b819-41b6-94c2-17aa94e3c7bd": [
+      {
+        "id": "302b14b6cdc0449c871b3e5cb29e521a",
+        "name": "test",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A21N",
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A",
+                      "767-2C"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779788007,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "2d9cf47908d84d93a9d922704ad74a2e",
+        "name": "test2",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A21N",
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A",
+                      "767-2C"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Central Asia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "6af26030fa28947221a4",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A318",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "099739e2d6652933ea05",
+              "pageDisplayName": "Aviation Finance",
+              "visual": "90eaf4e5bd3cf0a83dd7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86a56cbe567d5788b6c0",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A318",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779788121,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "9e00fa4c72dc48cdbaa6a521772835ef",
+        "name": "test123",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "2fd5042338d558ccfa58",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Albania",
+                      "Algeria",
+                      "Armenia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780501172,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "7b8a9a497c02420e8117e60d47d59d91",
+        "name": "test123455",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Asia-Pacific"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "98575931bba312e7ad5c",
+              "pageDisplayName": "AR_Graphs",
+              "visual": "c09d04b7ed28e633bc8c",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780921713,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ]
+  },
+  "sach123": {
+    "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7": [
+      {
+        "id": "db8768e4cacc49a0830eab25978686db",
+        "name": "test",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Albania",
+                      "Algeria",
+                      "Afghanistan"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Asia-Pacific",
+                      "Africa"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Africa",
+                      "Central Asia",
+                      "East Asia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779802628,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "3682acfa7c0a4c70b48ebbcaf1a11a6a",
+        "name": "jyfyujf",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "ca683287ce5d1cb2d62d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRLINE",
+                      "column": "Airline_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abu Dhabi Aviation"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRLINE",
+                    "column": "Airline_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "4a0a2efbc4c2ab6036a5",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Customer Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "AIR ALGERIE"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Customer Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779803841,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "9dbe87ac165c483780ca70c786f59ef6",
+        "name": "bksuyi",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "2fd5042338d558ccfa58",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Algeria",
+                      "Angola"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Africa",
+                      "Caribbean"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "East Asia",
+                      "Africa"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779804052,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ],
+    "14a8d602-cf61-4831-a55a-0229835f900f::601272cd-3fab-4cd2-93a5-1f9c7c152558": [
+      {
+        "id": "db8768e4cacc49a0830eab25978686db",
+        "name": "test",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Albania",
+                      "Algeria",
+                      "Afghanistan"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Asia-Pacific",
+                      "Africa"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Africa",
+                      "Central Asia",
+                      "East Asia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779802628,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "3682acfa7c0a4c70b48ebbcaf1a11a6a",
+        "name": "jyfyujf",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "ca683287ce5d1cb2d62d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRLINE",
+                      "column": "Airline_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abu Dhabi Aviation"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRLINE",
+                    "column": "Airline_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "4a0a2efbc4c2ab6036a5",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Customer Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "AIR ALGERIE"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Customer Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779803841,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "9dbe87ac165c483780ca70c786f59ef6",
+        "name": "bksuyi",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "2fd5042338d558ccfa58",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Algeria",
+                      "Angola"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Africa",
+                      "Caribbean"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "East Asia",
+                      "Africa"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779804052,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ],
+    "8578855e-dbb3-47b0-b302-437d8572a9a3::bfecbfc9-b819-41b6-94c2-17aa94e3c7bd": [
+      {
+        "id": "db8768e4cacc49a0830eab25978686db",
+        "name": "test",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Albania",
+                      "Algeria",
+                      "Afghanistan"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Asia-Pacific",
+                      "Africa"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Africa",
+                      "Central Asia",
+                      "East Asia"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779802628,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "3682acfa7c0a4c70b48ebbcaf1a11a6a",
+        "name": "jyfyujf",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "ca683287ce5d1cb2d62d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRLINE",
+                      "column": "Airline_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abu Dhabi Aviation"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRLINE",
+                    "column": "Airline_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "64f47b26a4ea78488ae3",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Model_Series_Delivery"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "737-800A"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Model_Series_Delivery"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "4a0a2efbc4c2ab6036a5",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Customer Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "AIR ALGERIE"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Customer Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "b9cea888adbfc6dd7617",
+              "pageDisplayName": "Aircraft Utilization",
+              "visual": "04da612546b194dce907",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-02-01T00:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "7bb6a1e1168b7d341ecd",
+              "pageDisplayName": "Airline Finance",
+              "visual": "92d8b502a101a57eeb29",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "accd1d87c052e8b06870",
+              "pageDisplayName": "BS and PL",
+              "visual": "b4bb3a91d36613d3484d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "TIRALIS_AIRLINE_FINANCIAL",
+                      "column": "AIRLINE"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Abra Group"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "TIRALIS_AIRLINE_FINANCIAL",
+                    "column": "AIRLINE"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "73789457271c9b8020de",
+              "pageDisplayName": "Aircraft Specifics",
+              "visual": "86f02c6102be81e8d36e",
+              "visualTitle": "DATE RANGE",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#advanced",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "NEAREST_MONTH_START"
+                    },
+                    "filterType": 0,
+                    "logicalOperator": "And",
+                    "conditions": [
+                      {
+                        "operator": "GreaterThanOrEqual",
+                        "value": "2026-04-30T23:00:00.000Z"
+                      }
+                    ]
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "NEAREST_MONTH_START"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779803841,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      },
+      {
+        "id": "9dbe87ac165c483780ca70c786f59ef6",
+        "name": "bksuyi",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "2fd5042338d558ccfa58",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_AIRCRAFT",
+                      "column": "ICAO_Code"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_AIRCRAFT",
+                    "column": "ICAO_Code"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "7edd7960cc66a4c2c0a7",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "DIM_COUNTRY",
+                      "column": "Country_Name"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Algeria",
+                      "Angola"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "DIM_COUNTRY",
+                    "column": "Country_Name"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "9df7d1bb4497ff75fbbd",
+              "pageDisplayName": "Deliveries",
+              "visual": "0d814f8f48f3331eaf3d",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_DELIVERIES",
+                      "column": "Region_D"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "Africa",
+                      "Caribbean"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_DELIVERIES",
+                    "column": "Region_D"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "857fde13f21505d33404",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Region_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "East Asia",
+                      "Africa"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Region_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1779804052,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ]
+  },
+  "kjbkb": {
+    "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7": [
+      {
+        "id": "63c7a0eee8964341b77b3a6559d700ed",
+        "name": "bj kkj",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "06dce27034d1ae647cd8",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Model_Series_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "767-2C",
+                      "737-800A"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Model_Series_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780497362,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ],
+    "14a8d602-cf61-4831-a55a-0229835f900f::601272cd-3fab-4cd2-93a5-1f9c7c152558": [
+      {
+        "id": "63c7a0eee8964341b77b3a6559d700ed",
+        "name": "bj kkj",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "06dce27034d1ae647cd8",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Model_Series_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "767-2C",
+                      "737-800A"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Model_Series_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780497362,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ],
+    "8578855e-dbb3-47b0-b302-437d8572a9a3::bfecbfc9-b819-41b6-94c2-17aa94e3c7bd": [
+      {
+        "id": "63c7a0eee8964341b77b3a6559d700ed",
+        "name": "bj kkj",
+        "filters": {
+          "filters": [],
+          "slicers": [
+            {
+              "page": "bee95b7880d7e451c2db",
+              "pageDisplayName": "Summary",
+              "visual": "a00a65c5b72894b32149",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                      "column": "AIRCRAFT_MODEL"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "A20N",
+                      "A21N"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+                    "column": "AIRCRAFT_MODEL"
+                  }
+                ]
+              }
+            },
+            {
+              "page": "0a05b7abd1bc02f89267",
+              "pageDisplayName": "Orders",
+              "visual": "06dce27034d1ae647cd8",
+              "visualTitle": "Slicer",
+              "state": {
+                "filters": [
+                  {
+                    "$schema": "http://powerbi.com/product/schema#basic",
+                    "target": {
+                      "table": "OD_ORDERS",
+                      "column": "Model_Series_Order"
+                    },
+                    "filterType": 1,
+                    "operator": "In",
+                    "values": [
+                      "767-2C",
+                      "737-800A"
+                    ],
+                    "requireSingleSelection": false
+                  }
+                ],
+                "targets": [
+                  {
+                    "table": "OD_ORDERS",
+                    "column": "Model_Series_Order"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "saved_at": 1780497362,
+        "report_bucket": "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7"
+      }
+    ]
+  }
+}

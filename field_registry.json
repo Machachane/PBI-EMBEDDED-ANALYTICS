@@ -1,0 +1,7610 @@
+{
+  "8578855e-dbb3-47b0-b302-437d8572a9a3::d32c0ba1-80fc-4e7a-99f6-f72d42ec61b7": [
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "year_month",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "077e2bd562c10b02d524",
+      "keywords": [
+        "month",
+        "period",
+        "year month"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_serial_number",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "5c5f27ff12f24df29cbd",
+      "keywords": [
+        "msn",
+        "serial number"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_icao_code",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "fb19edc876adb2c3cfb6",
+      "keywords": [
+        "aircraft code",
+        "icao code"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "engine_model",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "8c6d6840ec6ccddf41d4",
+      "keywords": [
+        "engine model",
+        "engine type"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "operator_group",
+      "displayName": "operator_group",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "operator_name",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "c30c7673c7036b06ec28",
+      "keywords": [
+        "airline",
+        "carrier",
+        "operator"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "passenger_load_factor",
+      "displayName": "passenger_load_factor",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "cargo_load_factor",
+      "displayName": "cargo_load_factor",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "additional_belly_weight",
+      "displayName": "additional_belly_weight",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "flight_cycles",
+      "displayName": "flight_cycles",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "flight_hours",
+      "displayName": "flight_hours",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_kgco2e",
+      "displayName": "wtw_co2_kgco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "saf_mandate_lifecycle_reduction_kgco2e",
+      "displayName": "saf_mandate_lifecycle_reduction_kgco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_ask_gco2e",
+      "displayName": "wtw_co2_per_ask_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_aftk_gco2e",
+      "displayName": "wtw_co2_per_aftk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rpk_gco2e",
+      "displayName": "wtw_co2_per_rpk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rtk_gco2e",
+      "displayName": "wtw_co2_per_rtk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rftk_gco2e",
+      "displayName": "wtw_co2_per_rftk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_TYPE",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "b521b81b0a6c0e34cae0",
+      "keywords": [
+        "aircraft type",
+        "type"
+      ]
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "AIRCRAFT_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Sub variants",
+      "displayName": "Sub variants",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Comment",
+      "displayName": "Comment",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Engine certification date",
+      "displayName": "Engine certification date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "FAA TCDS Holder",
+      "displayName": "FAA TCDS Holder",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Thrust (lb f) as per Type Certificate Data Sheet (TCDS)",
+      "displayName": "Thrust (lb f) as per Type Certificate Data Sheet (TCDS)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Thrust notes",
+      "displayName": "Thrust notes",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Sole supplier?",
+      "displayName": "Sole supplier?",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Competing engine type",
+      "displayName": "Competing engine type",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "id",
+      "displayName": "id",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Country",
+      "displayName": "Country",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "jurisdiction_type",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "cf70780dc1336503f0c8",
+      "keywords": [
+        "jurisdiction",
+        "jurisdiction type"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "deregistration_score",
+      "displayName": "deregistration_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_score",
+      "displayName": "repossession_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_overall",
+      "displayName": "repossession_overall",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_export",
+      "displayName": "repossession_export",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_third_party",
+      "displayName": "repossession_third_party",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_rule_of_law",
+      "displayName": "repossession_rule_of_law",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_ctc",
+      "displayName": "repossession_ctc",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_qualifying_declarations",
+      "displayName": "repossession_qualifying_declarations",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_availability_of_idera",
+      "displayName": "repossession_availability_of_idera",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Repossession Score Category",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "2d2bc93f8da75a812168",
+      "keywords": [
+        "repo category",
+        "repo risk",
+        "repossession",
+        "repossession risk"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_successful_dereg_precedent",
+      "displayName": "repossession_successful_dereg_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "rule_of_law_compliance_severity",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "ae0139cfdb5ba9be326f",
+      "keywords": [
+        "compliance",
+        "law compliance",
+        "legal risk",
+        "rule of law"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_no_dereg_refusal_precedent",
+      "displayName": "repossession_no_dereg_refusal_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_repossession_precedent",
+      "displayName": "repossession_repossession_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_alt_reg_country_1",
+      "displayName": "repossession_alt_reg_country_1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "predictive_value_severity",
+      "displayName": "predictive_value_severity",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_alt_reg_country_2",
+      "displayName": "repossession_alt_reg_country_2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_1_availability_of_self_help_and_judicially_directed_repossession_remedies",
+      "displayName": "q2_1_availability_of_self_help_and_judicially_directed_repossession_remedies",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_2_requirement_for_a_deposit_bond_or_other_security_in_judicial_proceedings",
+      "displayName": "q2_2_requirement_for_a_deposit_bond_or_other_security_in_judicial_proceedings",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_3_taxes_and_fees",
+      "displayName": "q2_3_taxes_and_fees",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_4_speed_of_repossession",
+      "displayName": "q2_4_speed_of_repossession",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_5_legal_cost_of_repossession",
+      "displayName": "q2_5_legal_cost_of_repossession",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_6_recognition_and_enforcement_of_english_and_new_york_court_judgments",
+      "displayName": "q2_6_recognition_and_enforcement_of_english_and_new_york_court_judgments",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_7_recognition_and_enforcement_of_arbitral_awards",
+      "displayName": "q2_7_recognition_and_enforcement_of_arbitral_awards",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_1_unusual_or_onerous_preferential_liens",
+      "displayName": "q3_1_unusual_or_onerous_preferential_liens",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_2_government_requisiton_and_confiscation",
+      "displayName": "q3_2_government_requisiton_and_confiscation",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_3_engine_accession_risk",
+      "displayName": "q3_3_engine_accession_risk",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_1_third_party_rights_to_export",
+      "displayName": "q4_1_third_party_rights_to_export",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_2_export_licenses_and_permits",
+      "displayName": "q4_2_export_licenses_and_permits",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_3_taxes_and_fees",
+      "displayName": "q4_3_taxes_and_fees",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_1_aircraft_register_type",
+      "displayName": "q5_1_aircraft_register_type",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_2_noting_of_creditor_interests",
+      "displayName": "q5_2_noting_of_creditor_interests",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_3_convenience_of_registration",
+      "displayName": "q5_3_convenience_of_registration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_5_third_party_rights_to_deregister",
+      "displayName": "q5_5_third_party_rights_to_deregister",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_6_precedent_of_successful_deregistration",
+      "displayName": "q5_6_precedent_of_successful_deregistration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_7_precedent_of_refusal_to_deregister",
+      "displayName": "q5_7_precedent_of_refusal_to_deregister",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_8_convenience_of_deregistration",
+      "displayName": "q5_8_convenience_of_deregistration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q6_1_relevant_repossession_precedent_more",
+      "displayName": "q6_1_relevant_repossession_precedent_more",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q6_2_relevant_repossession_precedent_cases",
+      "displayName": "q6_2_relevant_repossession_precedent_cases",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_1_accessibility_of_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_1_accessibility_of_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_2_sanctions_for_accessing_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_2_sanctions_for_accessing_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_3_recognition_of_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_3_recognition_of_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_1_awg",
+      "displayName": "q8_1_awg",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_wjp",
+      "displayName": "q8_2_wjp",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_open_government",
+      "displayName": "q8_2_open_government",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_absence_of_corruption",
+      "displayName": "q8_2_absence_of_corruption",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_regulatory_enforcement",
+      "displayName": "q8_2_regulatory_enforcement",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_civil_justice",
+      "displayName": "q8_2_civil_justice",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_heritage_foundation",
+      "displayName": "q8_3_heritage_foundation",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_property_rights",
+      "displayName": "q8_3_property_rights",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_government_integrity",
+      "displayName": "q8_3_government_integrity",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_judicial_effectiveness",
+      "displayName": "q8_3_judicial_effectiveness",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_investment_freedom",
+      "displayName": "q8_3_investment_freedom",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q9_further_comments",
+      "displayName": "q9_further_comments",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "contributors",
+      "displayName": "contributors",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "local_procedures",
+      "displayName": "local_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "key_international_procedures",
+      "displayName": "key_international_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "other_international_procedures",
+      "displayName": "other_international_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "unavailable_procedures",
+      "displayName": "unavailable_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "region",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "4d02f9e0bda4ab40fa63",
+      "keywords": [
+        "area",
+        "geography",
+        "region"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "alpha3",
+      "displayName": "alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Country_Name",
+      "displayName": "Country_Name",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Vintage",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "ec75f96d9e560d229b96",
+      "keywords": [
+        "build year",
+        "vintage",
+        "year built"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "2b3b575cadc097ced167",
+      "keywords": [
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Type",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "987986beae4836eae28d",
+      "keywords": [
+        "aircraft type",
+        "type"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Role",
+      "displayName": "Aircraft Role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Market Group",
+      "displayName": "Aircraft Market Group",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 1",
+      "displayName": "Aircraft Variant 1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 2",
+      "displayName": "Aircraft Variant 2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 4",
+      "displayName": "Aircraft Variant 4",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 5",
+      "displayName": "Aircraft Variant 5",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 6",
+      "displayName": "Aircraft Variant 6",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "ICAO code 1",
+      "displayName": "ICAO code 1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "ICAO code 2",
+      "displayName": "ICAO code 2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Family",
+      "displayName": "Family",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Technology",
+      "displayName": "Technology",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Market Value",
+      "displayName": "Market Value",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Lease_Rate_L",
+      "displayName": "Lease_Rate_L",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Lease_Rate_H",
+      "displayName": "Lease_Rate_H",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Manufacturer_Norm",
+      "displayName": "Manufacturer_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Market ValuE - High",
+      "displayName": "Market ValuE - High",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Customer Name",
+      "displayName": "Customer Name",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Country_Delivery",
+      "displayName": "Country_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_Delivery",
+      "displayName": "Region_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_D_Old",
+      "displayName": "Region_D_Old",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_D",
+      "displayName": "Region_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Model_Series_Delivery",
+      "displayName": "Model_Series_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Engine_Delivery",
+      "displayName": "Engine_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Engine_D",
+      "displayName": "Engine_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Delivery_Date",
+      "displayName": "Delivery_Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Quantity_Delivery",
+      "displayName": "Quantity_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Manufacturer",
+      "displayName": "Manufacturer",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Aircraft_Type_Norm",
+      "displayName": "Aircraft_Type_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Country_Alpha3",
+      "displayName": "Country_Alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "ICAO_Code_Delivery",
+      "displayName": "ICAO_Code_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Customer Name",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "4a0a2efbc4c2ab6036a5",
+      "keywords": [
+        "airline",
+        "buyer",
+        "customer",
+        "purchaser"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Country_Order",
+      "displayName": "Country_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Region_Order",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "857fde13f21505d33404",
+      "keywords": [
+        "geography",
+        "region"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Model_Series_Order",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "06dce27034d1ae647cd8",
+      "keywords": [
+        "aircraft model",
+        "model",
+        "model series"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Engine_Order",
+      "displayName": "Engine_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Engine_O",
+      "displayName": "Engine_O",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Order_Date",
+      "displayName": "DATE RANGE",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "255a5232aff7a768c12d",
+      "keywords": [
+        "date ordered",
+        "order",
+        "order date"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Quantity_Order",
+      "displayName": "Quantity_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "aa7d8ba141efecc69b13",
+      "keywords": [
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Aircraft_Type_Norm",
+      "displayName": "Aircraft_Type_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Country_Alpha3",
+      "displayName": "Country_Alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "ICAO_Code_Order",
+      "displayName": "ICAO_Code_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "ID_METRIC",
+      "displayName": "ID_METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "METRIC",
+      "displayName": "METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "ID_CATEGORY",
+      "displayName": "ID_CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "CATEGORY",
+      "displayName": "CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "AIRLINE",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "b4bb3a91d36613d3484d",
+      "keywords": [
+        "airline",
+        "carrier"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "FINANCIAL YEAR",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "32abc354121dc21238ea",
+      "keywords": [
+        "financial year",
+        "fiscal year",
+        "fy"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "REPORTING PERIOD",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "0ee0df717c5c89941060",
+      "keywords": [
+        "period",
+        "reporting period"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "FISCAL YEAR-END",
+      "displayName": "FISCAL YEAR-END",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "CURRENCY",
+      "displayName": "CURRENCY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "AMOUNT",
+      "displayName": "AMOUNT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Date",
+      "displayName": "Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Reporting Scope",
+      "displayName": "Reporting Scope",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "IFRS16/ASC842 Adoption",
+      "displayName": "IFRS16/ASC842 Adoption",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "In Administration",
+      "displayName": "In Administration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Adjusted_Amount",
+      "displayName": "Adjusted_Amount",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Fiscal_Year_Int",
+      "displayName": "Fiscal_Year_Int",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Variant",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "469831e82ed006add06e",
+      "keywords": [
+        "engine type",
+        "engine variant"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Sole_Supplier",
+      "displayName": "Sole_Supplier",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Thrust_lbf",
+      "displayName": "Thrust_lbf",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_ID",
+      "displayName": "AIRCRAFT_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_REG_NUMBER",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "5449c673099a891082a2",
+      "keywords": [
+        "reg number",
+        "registration",
+        "tail number",
+        "tail sign"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "86a56cbe567d5788b6c0",
+      "keywords": [
+        "aircraft model",
+        "model",
+        "type"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MANUFACTURER_SERIAL_NUMBER",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "bea5adde5314625adda0",
+      "keywords": [
+        "manufacturer serial number",
+        "msn",
+        "serial number"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OPERATOR",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "6490ab11490370ad98ac",
+      "keywords": [
+        "airline operator",
+        "operating carrier",
+        "operator"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OPERATOR_ICAO",
+      "displayName": "OPERATOR_ICAO",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "SOURCE",
+      "displayName": "SOURCE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FIRST_FLIGHT_DATE",
+      "displayName": "FIRST_FLIGHT_DATE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MANUFACTURED_YEAR",
+      "displayName": "MANUFACTURED_YEAR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "ba9422af800781036176",
+      "keywords": [
+        "aircraft manufacturer",
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_VARIANT",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "13d90554741cba750725",
+      "keywords": [
+        "aircraft variant",
+        "sub-variant",
+        "variant"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_REGISTER",
+      "displayName": "AIRCRAFT_REGISTER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OWNER",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "6e25d9ba8d70778e7901",
+      "keywords": [
+        "lessor",
+        "owner",
+        "owning entity"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OWNER_TYPE",
+      "displayName": "OWNER_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_MASTER_SERIES",
+      "displayName": "ENGINE_MASTER_SERIES",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_HOURS (LTM)",
+      "displayName": "FLIGHT_HOURS (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_CYCLES (LTM)",
+      "displayName": "FLIGHT_CYCLES (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_HOURS (TTL)",
+      "displayName": "FLIGHT_HOURS (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_CYCLES (TTL)",
+      "displayName": "FLIGHT_CYCLES (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "F_SEAT",
+      "displayName": "F_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "J_SEAT",
+      "displayName": "J_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "W_SEAT",
+      "displayName": "W_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Y_SEAT",
+      "displayName": "Y_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Operator_Norm",
+      "displayName": "Operator_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Register_Alpha3",
+      "displayName": "Register_Alpha3",
+      "page": "",
+      "visual": "",
+      "keywords": [
+        "alpha-3",
+        "alpha3",
+        "country",
+        "country code",
+        "nation",
+        "registration country"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Owner_Type_Clean",
+      "displayName": "Owner_Type_Clean",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "NEAREST_MONTH_START",
+      "displayName": "DATE RANGE",
+      "page": "73789457271c9b8020de",
+      "visual": "86f02c6102be81e8d36e",
+      "keywords": [
+        "as of date",
+        "date",
+        "delivery month",
+        "month"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MONTHLY_HOURS_TTL",
+      "displayName": "MONTHLY_HOURS_TTL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_AGE_MONTHS",
+      "displayName": "AIRCRAFT_AGE_MONTHS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FH_LTM",
+      "displayName": "AVG_FH_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FH_LTT",
+      "displayName": "AVG_FH_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FC_LTM",
+      "displayName": "AVG_FC_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FC_LTT",
+      "displayName": "AVG_FC_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "HRS_PER_CYCLE",
+      "displayName": "HRS_PER_CYCLE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_MODEL",
+      "displayName": "GRP_AVG_FH_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_MODEL",
+      "displayName": "GRP_AVG_FC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_MODEL",
+      "displayName": "GRP_HPC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_ENGINE",
+      "displayName": "GRP_AVG_FH_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_ENGINE",
+      "displayName": "GRP_AVG_FC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_ENGINE",
+      "displayName": "GRP_HPC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_OPERATOR",
+      "displayName": "GRP_AVG_FH_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_OPERATOR",
+      "displayName": "GRP_AVG_FC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_OPERATOR",
+      "displayName": "GRP_HPC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_MARKET",
+      "displayName": "GRP_AVG_FH_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_MARKET",
+      "displayName": "GRP_AVG_FC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_MARKET",
+      "displayName": "GRP_HPC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "LAST_POSITION",
+      "displayName": "LAST_POSITION",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "UNIQUE_ID",
+      "displayName": "UNIQUE_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Status Date",
+      "displayName": "Status Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Geographic Analysis",
+      "displayName": "Geographic Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Financier Analysis",
+      "displayName": "Financier Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Facility Analysis",
+      "displayName": "Facility Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Model",
+      "displayName": "Model",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Geographic distribution score",
+      "displayName": "Geographic distribution score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Region_D",
+      "displayName": "Region_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "alpha3",
+      "displayName": "alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Country_Name",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "db0b627d1d1f06cfedbb",
+      "keywords": [
+        "country",
+        "jurisdiction country",
+        "nation"
+      ]
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "region",
+      "displayName": "region",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "repossession_score",
+      "displayName": "repossession_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Repossession_Category",
+      "displayName": "Repossession_Category",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Has_Jurisdiction_Data",
+      "displayName": "Has_Jurisdiction_Data",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Latitude",
+      "displayName": "Latitude",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Longitude",
+      "displayName": "Longitude",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MetricHelper",
+      "column": "ID_METRIC",
+      "displayName": "ID_METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MetricHelper",
+      "column": "METRIC",
+      "displayName": "METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "CategoryHelper",
+      "column": "ID_CATEGORY",
+      "displayName": "ID_CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "CategoryHelper",
+      "column": "CATEGORY",
+      "displayName": "CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRLINE",
+      "column": "Airline_Name",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "ca683287ce5d1cb2d62d",
+      "keywords": [
+        "airline",
+        "airline name",
+        "carrier",
+        "carrier name"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "ICAO_Code",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "2fd5042338d558ccfa58",
+      "keywords": [
+        "aircraft type code",
+        "icao",
+        "icao code"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "d943bb62e60c74a3fe2a",
+      "keywords": [
+        "aircraft manufacturer",
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "AIRCRAFT_TYPE",
+      "displayName": "AIRCRAFT_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "Aircraft_Family",
+      "displayName": "Aircraft_Family",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "UNIQUE_ID",
+      "displayName": "UNIQUE_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_ID",
+      "displayName": "AIRCRAFT_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_REG_NUMBER",
+      "displayName": "AIRCRAFT_REG_NUMBER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "AIRCRAFT_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MANUFACTURER_SERIAL_NUMBER",
+      "displayName": "MANUFACTURER_SERIAL_NUMBER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OPERATOR",
+      "displayName": "OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OPERATOR_ICAO",
+      "displayName": "OPERATOR_ICAO",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "SOURCE",
+      "displayName": "SOURCE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FIRST_FLIGHT_DATE",
+      "displayName": "FIRST_FLIGHT_DATE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MANUFACTURED_YEAR",
+      "displayName": "MANUFACTURED_YEAR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_VARIANT",
+      "displayName": "AIRCRAFT_VARIANT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_REGISTER",
+      "displayName": "AIRCRAFT_REGISTER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OWNER",
+      "displayName": "OWNER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OWNER_TYPE",
+      "displayName": "OWNER_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_MASTER_SERIES",
+      "displayName": "ENGINE_MASTER_SERIES",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_HOURS (LTM)",
+      "displayName": "FLIGHT_HOURS (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_CYCLES (LTM)",
+      "displayName": "FLIGHT_CYCLES (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_HOURS (TTL)",
+      "displayName": "FLIGHT_HOURS (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_CYCLES (TTL)",
+      "displayName": "FLIGHT_CYCLES (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "F_SEAT",
+      "displayName": "F_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "J_SEAT",
+      "displayName": "J_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "W_SEAT",
+      "displayName": "W_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "Y_SEAT",
+      "displayName": "Y_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "NEAREST_MONTH_START",
+      "displayName": "NEAREST_MONTH_START",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MONTHLY_HOURS_TTL",
+      "displayName": "MONTHLY_HOURS_TTL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_AGE_MONTHS",
+      "displayName": "AIRCRAFT_AGE_MONTHS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FH_LTM",
+      "displayName": "AVG_FH_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FH_LTT",
+      "displayName": "AVG_FH_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FC_LTM",
+      "displayName": "AVG_FC_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FC_LTT",
+      "displayName": "AVG_FC_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "HRS_PER_CYCLE",
+      "displayName": "HRS_PER_CYCLE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_MODEL",
+      "displayName": "GRP_AVG_FH_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_MODEL",
+      "displayName": "GRP_AVG_FC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_MODEL",
+      "displayName": "GRP_HPC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_ENGINE",
+      "displayName": "GRP_AVG_FH_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_ENGINE",
+      "displayName": "GRP_AVG_FC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_ENGINE",
+      "displayName": "GRP_HPC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_OPERATOR",
+      "displayName": "GRP_AVG_FH_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_OPERATOR",
+      "displayName": "GRP_AVG_FC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_OPERATOR",
+      "displayName": "GRP_HPC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_MARKET",
+      "displayName": "GRP_AVG_FH_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_MARKET",
+      "displayName": "GRP_AVG_FC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_MARKET",
+      "displayName": "GRP_HPC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "LAST_POSITION",
+      "displayName": "LAST_POSITION",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "Status Date",
+      "displayName": "Status Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_DATE",
+      "column": "Date",
+      "displayName": "DATE RANGE",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "943998ec32c803cef02d",
+      "keywords": [
+        "as of date",
+        "calendar date",
+        "date",
+        "reporting date"
+      ]
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "MLA",
+      "displayName": "MLA",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Col T amnt",
+      "displayName": "Col T amnt",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "NR DEALS",
+      "displayName": "NR DEALS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Cap Mkts",
+      "displayName": "Cap Mkts",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Commercial",
+      "displayName": "Commercial",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "REPORTING PERIOD",
+      "displayName": "REPORTING PERIOD",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Year",
+      "displayName": "Year",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Borrower",
+      "displayName": "Borrower",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "$ Volume",
+      "displayName": "$ Volume",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "NR DEALS",
+      "displayName": "NR DEALS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "REPORTING PERIOD",
+      "displayName": "REPORTING PERIOD",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Year",
+      "displayName": "Year",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Year",
+      "displayName": "Slicer",
+      "page": "099739e2d6652933ea05",
+      "visual": "00ab7227d1f9015964e9",
+      "keywords": [
+        "fiscal year",
+        "year"
+      ]
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Reporting_Period",
+      "displayName": "Slicer",
+      "page": "099739e2d6652933ea05",
+      "visual": "59d2e6967bc7a6d03550",
+      "keywords": [
+        "period",
+        "reporting period"
+      ]
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Period_Label",
+      "displayName": "Period_Label",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Sort_Order",
+      "displayName": "Sort_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Aircraft_Manufacturer",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "61d036a7275ad9ed2be0",
+      "keywords": [
+        "aircraft manufacturer",
+        "manufacturer"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Family",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "d41c9730e6197a79e0ee",
+      "keywords": [
+        "engine family",
+        "engine group"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Manufacturer",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "f042f601621c312782ce",
+      "keywords": [
+        "engine maker",
+        "engine manufacturer",
+        "engine oem"
+      ]
+    }
+  ],
+  "14a8d602-cf61-4831-a55a-0229835f900f::601272cd-3fab-4cd2-93a5-1f9c7c152558": [
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "year_month",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "077e2bd562c10b02d524",
+      "keywords": [
+        "month",
+        "period",
+        "year month"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_serial_number",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "5c5f27ff12f24df29cbd",
+      "keywords": [
+        "msn",
+        "serial number"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_icao_code",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "fb19edc876adb2c3cfb6",
+      "keywords": [
+        "aircraft code",
+        "icao code"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "engine_model",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "8c6d6840ec6ccddf41d4",
+      "keywords": [
+        "engine model",
+        "engine type"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "operator_group",
+      "displayName": "operator_group",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "operator_name",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "c30c7673c7036b06ec28",
+      "keywords": [
+        "airline",
+        "carrier",
+        "operator"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "passenger_load_factor",
+      "displayName": "passenger_load_factor",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "cargo_load_factor",
+      "displayName": "cargo_load_factor",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "additional_belly_weight",
+      "displayName": "additional_belly_weight",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "flight_cycles",
+      "displayName": "flight_cycles",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "flight_hours",
+      "displayName": "flight_hours",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_kgco2e",
+      "displayName": "wtw_co2_kgco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "saf_mandate_lifecycle_reduction_kgco2e",
+      "displayName": "saf_mandate_lifecycle_reduction_kgco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_ask_gco2e",
+      "displayName": "wtw_co2_per_ask_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_aftk_gco2e",
+      "displayName": "wtw_co2_per_aftk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rpk_gco2e",
+      "displayName": "wtw_co2_per_rpk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rtk_gco2e",
+      "displayName": "wtw_co2_per_rtk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rftk_gco2e",
+      "displayName": "wtw_co2_per_rftk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_TYPE",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "b521b81b0a6c0e34cae0",
+      "keywords": [
+        "aircraft type",
+        "type"
+      ]
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "AIRCRAFT_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Sub variants",
+      "displayName": "Sub variants",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Comment",
+      "displayName": "Comment",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Engine certification date",
+      "displayName": "Engine certification date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "FAA TCDS Holder",
+      "displayName": "FAA TCDS Holder",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Thrust (lb f) as per Type Certificate Data Sheet (TCDS)",
+      "displayName": "Thrust (lb f) as per Type Certificate Data Sheet (TCDS)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Thrust notes",
+      "displayName": "Thrust notes",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Sole supplier?",
+      "displayName": "Sole supplier?",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Competing engine type",
+      "displayName": "Competing engine type",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "id",
+      "displayName": "id",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Country",
+      "displayName": "Country",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "jurisdiction_type",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "cf70780dc1336503f0c8",
+      "keywords": [
+        "jurisdiction",
+        "jurisdiction type"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "deregistration_score",
+      "displayName": "deregistration_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_score",
+      "displayName": "repossession_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_overall",
+      "displayName": "repossession_overall",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_export",
+      "displayName": "repossession_export",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_third_party",
+      "displayName": "repossession_third_party",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_rule_of_law",
+      "displayName": "repossession_rule_of_law",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_ctc",
+      "displayName": "repossession_ctc",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_qualifying_declarations",
+      "displayName": "repossession_qualifying_declarations",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_availability_of_idera",
+      "displayName": "repossession_availability_of_idera",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Repossession Score Category",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "2d2bc93f8da75a812168",
+      "keywords": [
+        "repo category",
+        "repo risk",
+        "repossession",
+        "repossession risk"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_successful_dereg_precedent",
+      "displayName": "repossession_successful_dereg_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "rule_of_law_compliance_severity",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "ae0139cfdb5ba9be326f",
+      "keywords": [
+        "compliance",
+        "law compliance",
+        "legal risk",
+        "rule of law"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_no_dereg_refusal_precedent",
+      "displayName": "repossession_no_dereg_refusal_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_repossession_precedent",
+      "displayName": "repossession_repossession_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_alt_reg_country_1",
+      "displayName": "repossession_alt_reg_country_1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "predictive_value_severity",
+      "displayName": "predictive_value_severity",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_alt_reg_country_2",
+      "displayName": "repossession_alt_reg_country_2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_1_availability_of_self_help_and_judicially_directed_repossession_remedies",
+      "displayName": "q2_1_availability_of_self_help_and_judicially_directed_repossession_remedies",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_2_requirement_for_a_deposit_bond_or_other_security_in_judicial_proceedings",
+      "displayName": "q2_2_requirement_for_a_deposit_bond_or_other_security_in_judicial_proceedings",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_3_taxes_and_fees",
+      "displayName": "q2_3_taxes_and_fees",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_4_speed_of_repossession",
+      "displayName": "q2_4_speed_of_repossession",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_5_legal_cost_of_repossession",
+      "displayName": "q2_5_legal_cost_of_repossession",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_6_recognition_and_enforcement_of_english_and_new_york_court_judgments",
+      "displayName": "q2_6_recognition_and_enforcement_of_english_and_new_york_court_judgments",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_7_recognition_and_enforcement_of_arbitral_awards",
+      "displayName": "q2_7_recognition_and_enforcement_of_arbitral_awards",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_1_unusual_or_onerous_preferential_liens",
+      "displayName": "q3_1_unusual_or_onerous_preferential_liens",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_2_government_requisiton_and_confiscation",
+      "displayName": "q3_2_government_requisiton_and_confiscation",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_3_engine_accession_risk",
+      "displayName": "q3_3_engine_accession_risk",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_1_third_party_rights_to_export",
+      "displayName": "q4_1_third_party_rights_to_export",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_2_export_licenses_and_permits",
+      "displayName": "q4_2_export_licenses_and_permits",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_3_taxes_and_fees",
+      "displayName": "q4_3_taxes_and_fees",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_1_aircraft_register_type",
+      "displayName": "q5_1_aircraft_register_type",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_2_noting_of_creditor_interests",
+      "displayName": "q5_2_noting_of_creditor_interests",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_3_convenience_of_registration",
+      "displayName": "q5_3_convenience_of_registration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_5_third_party_rights_to_deregister",
+      "displayName": "q5_5_third_party_rights_to_deregister",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_6_precedent_of_successful_deregistration",
+      "displayName": "q5_6_precedent_of_successful_deregistration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_7_precedent_of_refusal_to_deregister",
+      "displayName": "q5_7_precedent_of_refusal_to_deregister",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_8_convenience_of_deregistration",
+      "displayName": "q5_8_convenience_of_deregistration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q6_1_relevant_repossession_precedent_more",
+      "displayName": "q6_1_relevant_repossession_precedent_more",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q6_2_relevant_repossession_precedent_cases",
+      "displayName": "q6_2_relevant_repossession_precedent_cases",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_1_accessibility_of_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_1_accessibility_of_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_2_sanctions_for_accessing_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_2_sanctions_for_accessing_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_3_recognition_of_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_3_recognition_of_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_1_awg",
+      "displayName": "q8_1_awg",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_wjp",
+      "displayName": "q8_2_wjp",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_open_government",
+      "displayName": "q8_2_open_government",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_absence_of_corruption",
+      "displayName": "q8_2_absence_of_corruption",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_regulatory_enforcement",
+      "displayName": "q8_2_regulatory_enforcement",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_civil_justice",
+      "displayName": "q8_2_civil_justice",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_heritage_foundation",
+      "displayName": "q8_3_heritage_foundation",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_property_rights",
+      "displayName": "q8_3_property_rights",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_government_integrity",
+      "displayName": "q8_3_government_integrity",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_judicial_effectiveness",
+      "displayName": "q8_3_judicial_effectiveness",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_investment_freedom",
+      "displayName": "q8_3_investment_freedom",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q9_further_comments",
+      "displayName": "q9_further_comments",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "contributors",
+      "displayName": "contributors",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "local_procedures",
+      "displayName": "local_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "key_international_procedures",
+      "displayName": "key_international_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "other_international_procedures",
+      "displayName": "other_international_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "unavailable_procedures",
+      "displayName": "unavailable_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "region",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "4d02f9e0bda4ab40fa63",
+      "keywords": [
+        "area",
+        "geography",
+        "region"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "alpha3",
+      "displayName": "alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Country_Name",
+      "displayName": "Country_Name",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Vintage",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "ec75f96d9e560d229b96",
+      "keywords": [
+        "build year",
+        "vintage",
+        "year built"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "2b3b575cadc097ced167",
+      "keywords": [
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Type",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "987986beae4836eae28d",
+      "keywords": [
+        "aircraft type",
+        "type"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Role",
+      "displayName": "Aircraft Role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Market Group",
+      "displayName": "Aircraft Market Group",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 1",
+      "displayName": "Aircraft Variant 1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 2",
+      "displayName": "Aircraft Variant 2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 4",
+      "displayName": "Aircraft Variant 4",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 5",
+      "displayName": "Aircraft Variant 5",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 6",
+      "displayName": "Aircraft Variant 6",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "ICAO code 1",
+      "displayName": "ICAO code 1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "ICAO code 2",
+      "displayName": "ICAO code 2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Family",
+      "displayName": "Family",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Technology",
+      "displayName": "Technology",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Market Value",
+      "displayName": "Market Value",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Lease_Rate_L",
+      "displayName": "Lease_Rate_L",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Lease_Rate_H",
+      "displayName": "Lease_Rate_H",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Manufacturer_Norm",
+      "displayName": "Manufacturer_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Market ValuE - High",
+      "displayName": "Market ValuE - High",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Customer Name",
+      "displayName": "Customer Name",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Country_Delivery",
+      "displayName": "Country_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_Delivery",
+      "displayName": "Region_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_D_Old",
+      "displayName": "Region_D_Old",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_D",
+      "displayName": "Region_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Model_Series_Delivery",
+      "displayName": "Model_Series_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Engine_Delivery",
+      "displayName": "Engine_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Engine_D",
+      "displayName": "Engine_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Delivery_Date",
+      "displayName": "Delivery_Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Quantity_Delivery",
+      "displayName": "Quantity_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Manufacturer",
+      "displayName": "Manufacturer",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Aircraft_Type_Norm",
+      "displayName": "Aircraft_Type_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Country_Alpha3",
+      "displayName": "Country_Alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "ICAO_Code_Delivery",
+      "displayName": "ICAO_Code_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Customer Name",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "4a0a2efbc4c2ab6036a5",
+      "keywords": [
+        "airline",
+        "buyer",
+        "customer",
+        "purchaser"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Country_Order",
+      "displayName": "Country_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Region_Order",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "857fde13f21505d33404",
+      "keywords": [
+        "geography",
+        "region"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Model_Series_Order",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "06dce27034d1ae647cd8",
+      "keywords": [
+        "aircraft model",
+        "model",
+        "model series"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Engine_Order",
+      "displayName": "Engine_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Engine_O",
+      "displayName": "Engine_O",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Order_Date",
+      "displayName": "DATE RANGE",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "255a5232aff7a768c12d",
+      "keywords": [
+        "date ordered",
+        "order",
+        "order date"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Quantity_Order",
+      "displayName": "Quantity_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "aa7d8ba141efecc69b13",
+      "keywords": [
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Aircraft_Type_Norm",
+      "displayName": "Aircraft_Type_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Country_Alpha3",
+      "displayName": "Country_Alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "ICAO_Code_Order",
+      "displayName": "ICAO_Code_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "ID_METRIC",
+      "displayName": "ID_METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "METRIC",
+      "displayName": "METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "ID_CATEGORY",
+      "displayName": "ID_CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "CATEGORY",
+      "displayName": "CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "AIRLINE",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "b4bb3a91d36613d3484d",
+      "keywords": [
+        "airline",
+        "carrier"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "FINANCIAL YEAR",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "32abc354121dc21238ea",
+      "keywords": [
+        "financial year",
+        "fiscal year",
+        "fy"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "REPORTING PERIOD",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "0ee0df717c5c89941060",
+      "keywords": [
+        "period",
+        "reporting period"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "FISCAL YEAR-END",
+      "displayName": "FISCAL YEAR-END",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "CURRENCY",
+      "displayName": "CURRENCY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "AMOUNT",
+      "displayName": "AMOUNT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Date",
+      "displayName": "Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Reporting Scope",
+      "displayName": "Reporting Scope",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "IFRS16/ASC842 Adoption",
+      "displayName": "IFRS16/ASC842 Adoption",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "In Administration",
+      "displayName": "In Administration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Adjusted_Amount",
+      "displayName": "Adjusted_Amount",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Fiscal_Year_Int",
+      "displayName": "Fiscal_Year_Int",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Variant",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "469831e82ed006add06e",
+      "keywords": [
+        "engine type",
+        "engine variant"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Sole_Supplier",
+      "displayName": "Sole_Supplier",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Thrust_lbf",
+      "displayName": "Thrust_lbf",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_ID",
+      "displayName": "AIRCRAFT_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_REG_NUMBER",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "5449c673099a891082a2",
+      "keywords": [
+        "reg number",
+        "registration",
+        "tail number",
+        "tail sign"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "86a56cbe567d5788b6c0",
+      "keywords": [
+        "aircraft model",
+        "model",
+        "type"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MANUFACTURER_SERIAL_NUMBER",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "bea5adde5314625adda0",
+      "keywords": [
+        "manufacturer serial number",
+        "msn",
+        "serial number"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OPERATOR",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "6490ab11490370ad98ac",
+      "keywords": [
+        "airline operator",
+        "operating carrier",
+        "operator"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OPERATOR_ICAO",
+      "displayName": "OPERATOR_ICAO",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "SOURCE",
+      "displayName": "SOURCE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FIRST_FLIGHT_DATE",
+      "displayName": "FIRST_FLIGHT_DATE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MANUFACTURED_YEAR",
+      "displayName": "MANUFACTURED_YEAR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "ba9422af800781036176",
+      "keywords": [
+        "aircraft manufacturer",
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_VARIANT",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "13d90554741cba750725",
+      "keywords": [
+        "aircraft variant",
+        "sub-variant",
+        "variant"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_REGISTER",
+      "displayName": "AIRCRAFT_REGISTER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OWNER",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "6e25d9ba8d70778e7901",
+      "keywords": [
+        "lessor",
+        "owner",
+        "owning entity"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OWNER_TYPE",
+      "displayName": "OWNER_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_MASTER_SERIES",
+      "displayName": "ENGINE_MASTER_SERIES",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_HOURS (LTM)",
+      "displayName": "FLIGHT_HOURS (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_CYCLES (LTM)",
+      "displayName": "FLIGHT_CYCLES (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_HOURS (TTL)",
+      "displayName": "FLIGHT_HOURS (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_CYCLES (TTL)",
+      "displayName": "FLIGHT_CYCLES (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "F_SEAT",
+      "displayName": "F_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "J_SEAT",
+      "displayName": "J_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "W_SEAT",
+      "displayName": "W_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Y_SEAT",
+      "displayName": "Y_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Operator_Norm",
+      "displayName": "Operator_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Register_Alpha3",
+      "displayName": "Register_Alpha3",
+      "page": "",
+      "visual": "",
+      "keywords": [
+        "alpha-3",
+        "alpha3",
+        "country",
+        "country code",
+        "nation",
+        "registration country"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Owner_Type_Clean",
+      "displayName": "Owner_Type_Clean",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "NEAREST_MONTH_START",
+      "displayName": "DATE RANGE",
+      "page": "73789457271c9b8020de",
+      "visual": "86f02c6102be81e8d36e",
+      "keywords": [
+        "as of date",
+        "date",
+        "delivery month",
+        "month"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MONTHLY_HOURS_TTL",
+      "displayName": "MONTHLY_HOURS_TTL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_AGE_MONTHS",
+      "displayName": "AIRCRAFT_AGE_MONTHS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FH_LTM",
+      "displayName": "AVG_FH_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FH_LTT",
+      "displayName": "AVG_FH_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FC_LTM",
+      "displayName": "AVG_FC_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FC_LTT",
+      "displayName": "AVG_FC_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "HRS_PER_CYCLE",
+      "displayName": "HRS_PER_CYCLE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_MODEL",
+      "displayName": "GRP_AVG_FH_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_MODEL",
+      "displayName": "GRP_AVG_FC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_MODEL",
+      "displayName": "GRP_HPC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_ENGINE",
+      "displayName": "GRP_AVG_FH_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_ENGINE",
+      "displayName": "GRP_AVG_FC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_ENGINE",
+      "displayName": "GRP_HPC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_OPERATOR",
+      "displayName": "GRP_AVG_FH_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_OPERATOR",
+      "displayName": "GRP_AVG_FC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_OPERATOR",
+      "displayName": "GRP_HPC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_MARKET",
+      "displayName": "GRP_AVG_FH_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_MARKET",
+      "displayName": "GRP_AVG_FC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_MARKET",
+      "displayName": "GRP_HPC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "LAST_POSITION",
+      "displayName": "LAST_POSITION",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "UNIQUE_ID",
+      "displayName": "UNIQUE_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Status Date",
+      "displayName": "Status Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Geographic Analysis",
+      "displayName": "Geographic Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Financier Analysis",
+      "displayName": "Financier Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Facility Analysis",
+      "displayName": "Facility Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Model",
+      "displayName": "Model",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Geographic distribution score",
+      "displayName": "Geographic distribution score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Region_D",
+      "displayName": "Region_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "alpha3",
+      "displayName": "alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Country_Name",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "db0b627d1d1f06cfedbb",
+      "keywords": [
+        "country",
+        "jurisdiction country",
+        "nation"
+      ]
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "region",
+      "displayName": "region",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "repossession_score",
+      "displayName": "repossession_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Repossession_Category",
+      "displayName": "Repossession_Category",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Has_Jurisdiction_Data",
+      "displayName": "Has_Jurisdiction_Data",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Latitude",
+      "displayName": "Latitude",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Longitude",
+      "displayName": "Longitude",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MetricHelper",
+      "column": "ID_METRIC",
+      "displayName": "ID_METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MetricHelper",
+      "column": "METRIC",
+      "displayName": "METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "CategoryHelper",
+      "column": "ID_CATEGORY",
+      "displayName": "ID_CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "CategoryHelper",
+      "column": "CATEGORY",
+      "displayName": "CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRLINE",
+      "column": "Airline_Name",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "ca683287ce5d1cb2d62d",
+      "keywords": [
+        "airline",
+        "airline name",
+        "carrier",
+        "carrier name"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "ICAO_Code",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "2fd5042338d558ccfa58",
+      "keywords": [
+        "aircraft type code",
+        "icao",
+        "icao code"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "d943bb62e60c74a3fe2a",
+      "keywords": [
+        "aircraft manufacturer",
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "AIRCRAFT_TYPE",
+      "displayName": "AIRCRAFT_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "Aircraft_Family",
+      "displayName": "Aircraft_Family",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "UNIQUE_ID",
+      "displayName": "UNIQUE_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_ID",
+      "displayName": "AIRCRAFT_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_REG_NUMBER",
+      "displayName": "AIRCRAFT_REG_NUMBER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "AIRCRAFT_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MANUFACTURER_SERIAL_NUMBER",
+      "displayName": "MANUFACTURER_SERIAL_NUMBER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OPERATOR",
+      "displayName": "OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OPERATOR_ICAO",
+      "displayName": "OPERATOR_ICAO",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "SOURCE",
+      "displayName": "SOURCE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FIRST_FLIGHT_DATE",
+      "displayName": "FIRST_FLIGHT_DATE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MANUFACTURED_YEAR",
+      "displayName": "MANUFACTURED_YEAR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_VARIANT",
+      "displayName": "AIRCRAFT_VARIANT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_REGISTER",
+      "displayName": "AIRCRAFT_REGISTER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OWNER",
+      "displayName": "OWNER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OWNER_TYPE",
+      "displayName": "OWNER_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_MASTER_SERIES",
+      "displayName": "ENGINE_MASTER_SERIES",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_HOURS (LTM)",
+      "displayName": "FLIGHT_HOURS (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_CYCLES (LTM)",
+      "displayName": "FLIGHT_CYCLES (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_HOURS (TTL)",
+      "displayName": "FLIGHT_HOURS (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_CYCLES (TTL)",
+      "displayName": "FLIGHT_CYCLES (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "F_SEAT",
+      "displayName": "F_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "J_SEAT",
+      "displayName": "J_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "W_SEAT",
+      "displayName": "W_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "Y_SEAT",
+      "displayName": "Y_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "NEAREST_MONTH_START",
+      "displayName": "NEAREST_MONTH_START",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MONTHLY_HOURS_TTL",
+      "displayName": "MONTHLY_HOURS_TTL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_AGE_MONTHS",
+      "displayName": "AIRCRAFT_AGE_MONTHS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FH_LTM",
+      "displayName": "AVG_FH_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FH_LTT",
+      "displayName": "AVG_FH_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FC_LTM",
+      "displayName": "AVG_FC_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FC_LTT",
+      "displayName": "AVG_FC_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "HRS_PER_CYCLE",
+      "displayName": "HRS_PER_CYCLE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_MODEL",
+      "displayName": "GRP_AVG_FH_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_MODEL",
+      "displayName": "GRP_AVG_FC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_MODEL",
+      "displayName": "GRP_HPC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_ENGINE",
+      "displayName": "GRP_AVG_FH_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_ENGINE",
+      "displayName": "GRP_AVG_FC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_ENGINE",
+      "displayName": "GRP_HPC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_OPERATOR",
+      "displayName": "GRP_AVG_FH_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_OPERATOR",
+      "displayName": "GRP_AVG_FC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_OPERATOR",
+      "displayName": "GRP_HPC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_MARKET",
+      "displayName": "GRP_AVG_FH_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_MARKET",
+      "displayName": "GRP_AVG_FC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_MARKET",
+      "displayName": "GRP_HPC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "LAST_POSITION",
+      "displayName": "LAST_POSITION",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "Status Date",
+      "displayName": "Status Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_DATE",
+      "column": "Date",
+      "displayName": "DATE RANGE",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "943998ec32c803cef02d",
+      "keywords": [
+        "as of date",
+        "calendar date",
+        "date",
+        "reporting date"
+      ]
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "MLA",
+      "displayName": "MLA",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Col T amnt",
+      "displayName": "Col T amnt",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "NR DEALS",
+      "displayName": "NR DEALS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Cap Mkts",
+      "displayName": "Cap Mkts",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Commercial",
+      "displayName": "Commercial",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "REPORTING PERIOD",
+      "displayName": "REPORTING PERIOD",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Year",
+      "displayName": "Year",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Borrower",
+      "displayName": "Borrower",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "$ Volume",
+      "displayName": "$ Volume",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "NR DEALS",
+      "displayName": "NR DEALS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "REPORTING PERIOD",
+      "displayName": "REPORTING PERIOD",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Year",
+      "displayName": "Year",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Year",
+      "displayName": "Slicer",
+      "page": "099739e2d6652933ea05",
+      "visual": "00ab7227d1f9015964e9",
+      "keywords": [
+        "fiscal year",
+        "year"
+      ]
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Reporting_Period",
+      "displayName": "Slicer",
+      "page": "099739e2d6652933ea05",
+      "visual": "59d2e6967bc7a6d03550",
+      "keywords": [
+        "period",
+        "reporting period"
+      ]
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Period_Label",
+      "displayName": "Period_Label",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Sort_Order",
+      "displayName": "Sort_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Aircraft_Manufacturer",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "61d036a7275ad9ed2be0",
+      "keywords": [
+        "aircraft manufacturer",
+        "manufacturer"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Family",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "d41c9730e6197a79e0ee",
+      "keywords": [
+        "engine family",
+        "engine group"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Manufacturer",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "f042f601621c312782ce",
+      "keywords": [
+        "engine maker",
+        "engine manufacturer",
+        "engine oem"
+      ]
+    }
+  ],
+  "8578855e-dbb3-47b0-b302-437d8572a9a3::bfecbfc9-b819-41b6-94c2-17aa94e3c7bd": [
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "year_month",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "077e2bd562c10b02d524",
+      "keywords": [
+        "month",
+        "period",
+        "year month"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_serial_number",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "5c5f27ff12f24df29cbd",
+      "keywords": [
+        "msn",
+        "serial number"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_icao_code",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "fb19edc876adb2c3cfb6",
+      "keywords": [
+        "aircraft code",
+        "icao code"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "engine_model",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "8c6d6840ec6ccddf41d4",
+      "keywords": [
+        "engine model",
+        "engine type"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "operator_group",
+      "displayName": "operator_group",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "operator_name",
+      "displayName": "Slicer",
+      "page": "f1125916d112f831abb1",
+      "visual": "c30c7673c7036b06ec28",
+      "keywords": [
+        "airline",
+        "carrier",
+        "operator"
+      ]
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "passenger_load_factor",
+      "displayName": "passenger_load_factor",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "cargo_load_factor",
+      "displayName": "cargo_load_factor",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "additional_belly_weight",
+      "displayName": "additional_belly_weight",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "flight_cycles",
+      "displayName": "flight_cycles",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "flight_hours",
+      "displayName": "flight_hours",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_kgco2e",
+      "displayName": "wtw_co2_kgco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "saf_mandate_lifecycle_reduction_kgco2e",
+      "displayName": "saf_mandate_lifecycle_reduction_kgco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_ask_gco2e",
+      "displayName": "wtw_co2_per_ask_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_aftk_gco2e",
+      "displayName": "wtw_co2_per_aftk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rpk_gco2e",
+      "displayName": "wtw_co2_per_rpk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rtk_gco2e",
+      "displayName": "wtw_co2_per_rtk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "EMISSIONS_ANALYSIS",
+      "column": "wtw_co2_per_rftk_gco2e",
+      "displayName": "wtw_co2_per_rftk_gco2e",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_TYPE",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "b521b81b0a6c0e34cae0",
+      "keywords": [
+        "aircraft type",
+        "type"
+      ]
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "AIRCRAFT_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Sub variants",
+      "displayName": "Sub variants",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Comment",
+      "displayName": "Comment",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Engine certification date",
+      "displayName": "Engine certification date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "FAA TCDS Holder",
+      "displayName": "FAA TCDS Holder",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Thrust (lb f) as per Type Certificate Data Sheet (TCDS)",
+      "displayName": "Thrust (lb f) as per Type Certificate Data Sheet (TCDS)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Thrust notes",
+      "displayName": "Thrust notes",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Sole supplier?",
+      "displayName": "Sole supplier?",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "ENGINE_PROFILE",
+      "column": "Competing engine type",
+      "displayName": "Competing engine type",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "id",
+      "displayName": "id",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Country",
+      "displayName": "Country",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "jurisdiction_type",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "cf70780dc1336503f0c8",
+      "keywords": [
+        "jurisdiction",
+        "jurisdiction type"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "deregistration_score",
+      "displayName": "deregistration_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_score",
+      "displayName": "repossession_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_overall",
+      "displayName": "repossession_overall",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_export",
+      "displayName": "repossession_export",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_third_party",
+      "displayName": "repossession_third_party",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_rule_of_law",
+      "displayName": "repossession_rule_of_law",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_ctc",
+      "displayName": "repossession_ctc",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_qualifying_declarations",
+      "displayName": "repossession_qualifying_declarations",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_availability_of_idera",
+      "displayName": "repossession_availability_of_idera",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Repossession Score Category",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "2d2bc93f8da75a812168",
+      "keywords": [
+        "repo category",
+        "repo risk",
+        "repossession",
+        "repossession risk"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_successful_dereg_precedent",
+      "displayName": "repossession_successful_dereg_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "rule_of_law_compliance_severity",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "ae0139cfdb5ba9be326f",
+      "keywords": [
+        "compliance",
+        "law compliance",
+        "legal risk",
+        "rule of law"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_no_dereg_refusal_precedent",
+      "displayName": "repossession_no_dereg_refusal_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_repossession_precedent",
+      "displayName": "repossession_repossession_precedent",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_alt_reg_country_1",
+      "displayName": "repossession_alt_reg_country_1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "predictive_value_severity",
+      "displayName": "predictive_value_severity",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "repossession_alt_reg_country_2",
+      "displayName": "repossession_alt_reg_country_2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_1_availability_of_self_help_and_judicially_directed_repossession_remedies",
+      "displayName": "q2_1_availability_of_self_help_and_judicially_directed_repossession_remedies",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_2_requirement_for_a_deposit_bond_or_other_security_in_judicial_proceedings",
+      "displayName": "q2_2_requirement_for_a_deposit_bond_or_other_security_in_judicial_proceedings",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_3_taxes_and_fees",
+      "displayName": "q2_3_taxes_and_fees",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_4_speed_of_repossession",
+      "displayName": "q2_4_speed_of_repossession",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_5_legal_cost_of_repossession",
+      "displayName": "q2_5_legal_cost_of_repossession",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_6_recognition_and_enforcement_of_english_and_new_york_court_judgments",
+      "displayName": "q2_6_recognition_and_enforcement_of_english_and_new_york_court_judgments",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q2_7_recognition_and_enforcement_of_arbitral_awards",
+      "displayName": "q2_7_recognition_and_enforcement_of_arbitral_awards",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_1_unusual_or_onerous_preferential_liens",
+      "displayName": "q3_1_unusual_or_onerous_preferential_liens",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_2_government_requisiton_and_confiscation",
+      "displayName": "q3_2_government_requisiton_and_confiscation",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q3_3_engine_accession_risk",
+      "displayName": "q3_3_engine_accession_risk",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_1_third_party_rights_to_export",
+      "displayName": "q4_1_third_party_rights_to_export",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_2_export_licenses_and_permits",
+      "displayName": "q4_2_export_licenses_and_permits",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q4_3_taxes_and_fees",
+      "displayName": "q4_3_taxes_and_fees",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_1_aircraft_register_type",
+      "displayName": "q5_1_aircraft_register_type",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_2_noting_of_creditor_interests",
+      "displayName": "q5_2_noting_of_creditor_interests",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_3_convenience_of_registration",
+      "displayName": "q5_3_convenience_of_registration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_5_third_party_rights_to_deregister",
+      "displayName": "q5_5_third_party_rights_to_deregister",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_6_precedent_of_successful_deregistration",
+      "displayName": "q5_6_precedent_of_successful_deregistration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_7_precedent_of_refusal_to_deregister",
+      "displayName": "q5_7_precedent_of_refusal_to_deregister",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q5_8_convenience_of_deregistration",
+      "displayName": "q5_8_convenience_of_deregistration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q6_1_relevant_repossession_precedent_more",
+      "displayName": "q6_1_relevant_repossession_precedent_more",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q6_2_relevant_repossession_precedent_cases",
+      "displayName": "q6_2_relevant_repossession_precedent_cases",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_1_accessibility_of_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_1_accessibility_of_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_2_sanctions_for_accessing_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_2_sanctions_for_accessing_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q7_3_recognition_of_restructuring_procedures_in_other_jurisdictions",
+      "displayName": "q7_3_recognition_of_restructuring_procedures_in_other_jurisdictions",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_1_awg",
+      "displayName": "q8_1_awg",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_wjp",
+      "displayName": "q8_2_wjp",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_open_government",
+      "displayName": "q8_2_open_government",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_absence_of_corruption",
+      "displayName": "q8_2_absence_of_corruption",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_regulatory_enforcement",
+      "displayName": "q8_2_regulatory_enforcement",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_2_civil_justice",
+      "displayName": "q8_2_civil_justice",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_heritage_foundation",
+      "displayName": "q8_3_heritage_foundation",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_property_rights",
+      "displayName": "q8_3_property_rights",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_government_integrity",
+      "displayName": "q8_3_government_integrity",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_judicial_effectiveness",
+      "displayName": "q8_3_judicial_effectiveness",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q8_3_investment_freedom",
+      "displayName": "q8_3_investment_freedom",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "q9_further_comments",
+      "displayName": "q9_further_comments",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "contributors",
+      "displayName": "contributors",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "local_procedures",
+      "displayName": "local_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "key_international_procedures",
+      "displayName": "key_international_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "other_international_procedures",
+      "displayName": "other_international_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "unavailable_procedures",
+      "displayName": "unavailable_procedures",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "region",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "4d02f9e0bda4ab40fa63",
+      "keywords": [
+        "area",
+        "geography",
+        "region"
+      ]
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "alpha3",
+      "displayName": "alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "JURISDICTION_RISK_ANALYSIS",
+      "column": "Country_Name",
+      "displayName": "Country_Name",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Vintage",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "ec75f96d9e560d229b96",
+      "keywords": [
+        "build year",
+        "vintage",
+        "year built"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "2b3b575cadc097ced167",
+      "keywords": [
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Type",
+      "displayName": "Slicer",
+      "page": "8fd9f44815fb792a0228",
+      "visual": "987986beae4836eae28d",
+      "keywords": [
+        "aircraft type",
+        "type"
+      ]
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Role",
+      "displayName": "Aircraft Role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Market Group",
+      "displayName": "Aircraft Market Group",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 1",
+      "displayName": "Aircraft Variant 1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 2",
+      "displayName": "Aircraft Variant 2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 4",
+      "displayName": "Aircraft Variant 4",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 5",
+      "displayName": "Aircraft Variant 5",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Aircraft Variant 6",
+      "displayName": "Aircraft Variant 6",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "ICAO code 1",
+      "displayName": "ICAO code 1",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "ICAO code 2",
+      "displayName": "ICAO code 2",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Family",
+      "displayName": "Family",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Technology",
+      "displayName": "Technology",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Market Value",
+      "displayName": "Market Value",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Lease_Rate_L",
+      "displayName": "Lease_Rate_L",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Lease_Rate_H",
+      "displayName": "Lease_Rate_H",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Manufacturer_Norm",
+      "displayName": "Manufacturer_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MARKET_VALUE_LEASE_RATES",
+      "column": "Market ValuE - High",
+      "displayName": "Market ValuE - High",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Customer Name",
+      "displayName": "Customer Name",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Country_Delivery",
+      "displayName": "Country_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_Delivery",
+      "displayName": "Region_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_D_Old",
+      "displayName": "Region_D_Old",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Region_D",
+      "displayName": "Region_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Model_Series_Delivery",
+      "displayName": "Model_Series_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Engine_Delivery",
+      "displayName": "Engine_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Engine_D",
+      "displayName": "Engine_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Delivery_Date",
+      "displayName": "Delivery_Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Quantity_Delivery",
+      "displayName": "Quantity_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Manufacturer",
+      "displayName": "Manufacturer",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Aircraft_Type_Norm",
+      "displayName": "Aircraft_Type_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Country_Alpha3",
+      "displayName": "Country_Alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "ICAO_Code_Delivery",
+      "displayName": "ICAO_Code_Delivery",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_DELIVERIES",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Customer Name",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "4a0a2efbc4c2ab6036a5",
+      "keywords": [
+        "airline",
+        "buyer",
+        "customer",
+        "purchaser"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Country_Order",
+      "displayName": "Country_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Region_Order",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "857fde13f21505d33404",
+      "keywords": [
+        "geography",
+        "region"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Model_Series_Order",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "06dce27034d1ae647cd8",
+      "keywords": [
+        "aircraft model",
+        "model",
+        "model series"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Engine_Order",
+      "displayName": "Engine_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Engine_O",
+      "displayName": "Engine_O",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Order_Date",
+      "displayName": "DATE RANGE",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "255a5232aff7a768c12d",
+      "keywords": [
+        "date ordered",
+        "order",
+        "order date"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Quantity_Order",
+      "displayName": "Quantity_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "0a05b7abd1bc02f89267",
+      "visual": "aa7d8ba141efecc69b13",
+      "keywords": [
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Aircraft_Type_Norm",
+      "displayName": "Aircraft_Type_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Country_Alpha3",
+      "displayName": "Country_Alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "ICAO_Code_Order",
+      "displayName": "ICAO_Code_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "OD_ORDERS",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "ID_METRIC",
+      "displayName": "ID_METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "METRIC",
+      "displayName": "METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "ID_CATEGORY",
+      "displayName": "ID_CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "CATEGORY",
+      "displayName": "CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "AIRLINE",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "b4bb3a91d36613d3484d",
+      "keywords": [
+        "airline",
+        "carrier"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "FINANCIAL YEAR",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "32abc354121dc21238ea",
+      "keywords": [
+        "financial year",
+        "fiscal year",
+        "fy"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "REPORTING PERIOD",
+      "displayName": "Slicer",
+      "page": "accd1d87c052e8b06870",
+      "visual": "0ee0df717c5c89941060",
+      "keywords": [
+        "period",
+        "reporting period"
+      ]
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "FISCAL YEAR-END",
+      "displayName": "FISCAL YEAR-END",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "CURRENCY",
+      "displayName": "CURRENCY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "AMOUNT",
+      "displayName": "AMOUNT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Date",
+      "displayName": "Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Reporting Scope",
+      "displayName": "Reporting Scope",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "IFRS16/ASC842 Adoption",
+      "displayName": "IFRS16/ASC842 Adoption",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "In Administration",
+      "displayName": "In Administration",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Airline_Norm",
+      "displayName": "Airline_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Adjusted_Amount",
+      "displayName": "Adjusted_Amount",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "TIRALIS_AIRLINE_FINANCIAL",
+      "column": "Fiscal_Year_Int",
+      "displayName": "Fiscal_Year_Int",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Variant",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "469831e82ed006add06e",
+      "keywords": [
+        "engine type",
+        "engine variant"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Sole_Supplier",
+      "displayName": "Sole_Supplier",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Thrust_lbf",
+      "displayName": "Thrust_lbf",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_ID",
+      "displayName": "AIRCRAFT_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_REG_NUMBER",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "5449c673099a891082a2",
+      "keywords": [
+        "reg number",
+        "registration",
+        "tail number",
+        "tail sign"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "86a56cbe567d5788b6c0",
+      "keywords": [
+        "aircraft model",
+        "model",
+        "type"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MANUFACTURER_SERIAL_NUMBER",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "bea5adde5314625adda0",
+      "keywords": [
+        "manufacturer serial number",
+        "msn",
+        "serial number"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OPERATOR",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "6490ab11490370ad98ac",
+      "keywords": [
+        "airline operator",
+        "operating carrier",
+        "operator"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OPERATOR_ICAO",
+      "displayName": "OPERATOR_ICAO",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "SOURCE",
+      "displayName": "SOURCE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FIRST_FLIGHT_DATE",
+      "displayName": "FIRST_FLIGHT_DATE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MANUFACTURED_YEAR",
+      "displayName": "MANUFACTURED_YEAR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "Slicer",
+      "page": "73789457271c9b8020de",
+      "visual": "ba9422af800781036176",
+      "keywords": [
+        "aircraft manufacturer",
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_VARIANT",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "13d90554741cba750725",
+      "keywords": [
+        "aircraft variant",
+        "sub-variant",
+        "variant"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_REGISTER",
+      "displayName": "AIRCRAFT_REGISTER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OWNER",
+      "displayName": "Slicer",
+      "page": "98575931bba312e7ad5c",
+      "visual": "6e25d9ba8d70778e7901",
+      "keywords": [
+        "lessor",
+        "owner",
+        "owning entity"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "OWNER_TYPE",
+      "displayName": "OWNER_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_MASTER_SERIES",
+      "displayName": "ENGINE_MASTER_SERIES",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_HOURS (LTM)",
+      "displayName": "FLIGHT_HOURS (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_CYCLES (LTM)",
+      "displayName": "FLIGHT_CYCLES (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_HOURS (TTL)",
+      "displayName": "FLIGHT_HOURS (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "FLIGHT_CYCLES (TTL)",
+      "displayName": "FLIGHT_CYCLES (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "F_SEAT",
+      "displayName": "F_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "J_SEAT",
+      "displayName": "J_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "W_SEAT",
+      "displayName": "W_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Y_SEAT",
+      "displayName": "Y_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Operator_Norm",
+      "displayName": "Operator_Norm",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Register_Alpha3",
+      "displayName": "Register_Alpha3",
+      "page": "",
+      "visual": "",
+      "keywords": [
+        "alpha-3",
+        "alpha3",
+        "country",
+        "country code",
+        "nation",
+        "registration country"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Owner_Type_Clean",
+      "displayName": "Owner_Type_Clean",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "NEAREST_MONTH_START",
+      "displayName": "DATE RANGE",
+      "page": "73789457271c9b8020de",
+      "visual": "86f02c6102be81e8d36e",
+      "keywords": [
+        "as of date",
+        "date",
+        "delivery month",
+        "month"
+      ]
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "MONTHLY_HOURS_TTL",
+      "displayName": "MONTHLY_HOURS_TTL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AIRCRAFT_AGE_MONTHS",
+      "displayName": "AIRCRAFT_AGE_MONTHS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FH_LTM",
+      "displayName": "AVG_FH_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FH_LTT",
+      "displayName": "AVG_FH_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FC_LTM",
+      "displayName": "AVG_FC_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "AVG_FC_LTT",
+      "displayName": "AVG_FC_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "HRS_PER_CYCLE",
+      "displayName": "HRS_PER_CYCLE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_MODEL",
+      "displayName": "GRP_AVG_FH_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_MODEL",
+      "displayName": "GRP_AVG_FC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_MODEL",
+      "displayName": "GRP_HPC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_ENGINE",
+      "displayName": "GRP_AVG_FH_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_ENGINE",
+      "displayName": "GRP_AVG_FC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_ENGINE",
+      "displayName": "GRP_HPC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_OPERATOR",
+      "displayName": "GRP_AVG_FH_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_OPERATOR",
+      "displayName": "GRP_AVG_FC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_OPERATOR",
+      "displayName": "GRP_HPC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FH_MARKET",
+      "displayName": "GRP_AVG_FH_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_AVG_FC_MARKET",
+      "displayName": "GRP_AVG_FC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "GRP_HPC_MARKET",
+      "displayName": "GRP_HPC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "LAST_POSITION",
+      "displayName": "LAST_POSITION",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "UNIQUE_ID",
+      "displayName": "UNIQUE_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL",
+      "column": "Status Date",
+      "displayName": "Status Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Geographic Analysis",
+      "displayName": "Geographic Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "GEO_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Financier Analysis",
+      "displayName": "Financier Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FIN_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Facility Analysis",
+      "displayName": "Facility Analysis",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "H1/2025",
+      "displayName": "H1/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "H2/2025",
+      "displayName": "H2/2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Year 2025",
+      "displayName": "Year 2025",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "FACILITY_A",
+      "column": "Order",
+      "displayName": "Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Model",
+      "displayName": "Model",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Geographic distribution score",
+      "displayName": "Geographic distribution score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DELIVERY GEO DISTRIBUTION",
+      "column": "Region_D",
+      "displayName": "Region_D",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "alpha3",
+      "displayName": "alpha3",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Country_Name",
+      "displayName": "Slicer",
+      "page": "2608388233f414c008ff",
+      "visual": "db0b627d1d1f06cfedbb",
+      "keywords": [
+        "country",
+        "jurisdiction country",
+        "nation"
+      ]
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "region",
+      "displayName": "region",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "repossession_score",
+      "displayName": "repossession_score",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Repossession_Category",
+      "displayName": "Repossession_Category",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Has_Jurisdiction_Data",
+      "displayName": "Has_Jurisdiction_Data",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Latitude",
+      "displayName": "Latitude",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_COUNTRY",
+      "column": "Longitude",
+      "displayName": "Longitude",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MetricHelper",
+      "column": "ID_METRIC",
+      "displayName": "ID_METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MetricHelper",
+      "column": "METRIC",
+      "displayName": "METRIC",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "CategoryHelper",
+      "column": "ID_CATEGORY",
+      "displayName": "ID_CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "CategoryHelper",
+      "column": "CATEGORY",
+      "displayName": "CATEGORY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRLINE",
+      "column": "Airline_Name",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "ca683287ce5d1cb2d62d",
+      "keywords": [
+        "airline",
+        "airline name",
+        "carrier",
+        "carrier name"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "ICAO_Code",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "2fd5042338d558ccfa58",
+      "keywords": [
+        "aircraft type code",
+        "icao",
+        "icao code"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "Manufacturer",
+      "displayName": "Slicer",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "d943bb62e60c74a3fe2a",
+      "keywords": [
+        "aircraft manufacturer",
+        "maker",
+        "manufacturer",
+        "oem"
+      ]
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "AIRCRAFT_TYPE",
+      "displayName": "AIRCRAFT_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "Aircraft_Family",
+      "displayName": "Aircraft_Family",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_AIRCRAFT",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "UNIQUE_ID",
+      "displayName": "UNIQUE_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_ID",
+      "displayName": "AIRCRAFT_ID",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_REG_NUMBER",
+      "displayName": "AIRCRAFT_REG_NUMBER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MODEL",
+      "displayName": "AIRCRAFT_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MANUFACTURER_SERIAL_NUMBER",
+      "displayName": "MANUFACTURER_SERIAL_NUMBER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OPERATOR",
+      "displayName": "OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OPERATOR_ICAO",
+      "displayName": "OPERATOR_ICAO",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "SOURCE",
+      "displayName": "SOURCE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FIRST_FLIGHT_DATE",
+      "displayName": "FIRST_FLIGHT_DATE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MANUFACTURED_YEAR",
+      "displayName": "MANUFACTURED_YEAR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MANUFACTURER",
+      "displayName": "AIRCRAFT_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_VARIANT",
+      "displayName": "AIRCRAFT_VARIANT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_REGISTER",
+      "displayName": "AIRCRAFT_REGISTER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "aircraft_role",
+      "displayName": "aircraft_role",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OWNER",
+      "displayName": "OWNER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "OWNER_TYPE",
+      "displayName": "OWNER_TYPE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_MANUFACTURER",
+      "displayName": "ENGINE_MANUFACTURER",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_FAMILY",
+      "displayName": "ENGINE_FAMILY",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "ENGINE_MASTER_SERIES",
+      "displayName": "ENGINE_MASTER_SERIES",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_MARKET_GROUP",
+      "displayName": "AIRCRAFT_MARKET_GROUP",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_HOURS (LTM)",
+      "displayName": "FLIGHT_HOURS (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_CYCLES (LTM)",
+      "displayName": "FLIGHT_CYCLES (LTM)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_HOURS (TTL)",
+      "displayName": "FLIGHT_HOURS (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "FLIGHT_CYCLES (TTL)",
+      "displayName": "FLIGHT_CYCLES (TTL)",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "F_SEAT",
+      "displayName": "F_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "J_SEAT",
+      "displayName": "J_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "W_SEAT",
+      "displayName": "W_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "Y_SEAT",
+      "displayName": "Y_SEAT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "NEAREST_MONTH_START",
+      "displayName": "NEAREST_MONTH_START",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "MONTHLY_HOURS_TTL",
+      "displayName": "MONTHLY_HOURS_TTL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AIRCRAFT_AGE_MONTHS",
+      "displayName": "AIRCRAFT_AGE_MONTHS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FH_LTM",
+      "displayName": "AVG_FH_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FH_LTT",
+      "displayName": "AVG_FH_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FC_LTM",
+      "displayName": "AVG_FC_LTM",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "AVG_FC_LTT",
+      "displayName": "AVG_FC_LTT",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "HRS_PER_CYCLE",
+      "displayName": "HRS_PER_CYCLE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_MODEL",
+      "displayName": "GRP_AVG_FH_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_MODEL",
+      "displayName": "GRP_AVG_FC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_MODEL",
+      "displayName": "GRP_HPC_MODEL",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_ENGINE",
+      "displayName": "GRP_AVG_FH_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_ENGINE",
+      "displayName": "GRP_AVG_FC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_ENGINE",
+      "displayName": "GRP_HPC_ENGINE",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_OPERATOR",
+      "displayName": "GRP_AVG_FH_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_OPERATOR",
+      "displayName": "GRP_AVG_FC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_OPERATOR",
+      "displayName": "GRP_HPC_OPERATOR",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FH_MARKET",
+      "displayName": "GRP_AVG_FH_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_AVG_FC_MARKET",
+      "displayName": "GRP_AVG_FC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "GRP_HPC_MARKET",
+      "displayName": "GRP_HPC_MARKET",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "LAST_POSITION",
+      "displayName": "LAST_POSITION",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "STATUS",
+      "displayName": "STATUS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "AIRCRAFT_REGISTRY_FLEET_DATA_FINAL_COPY",
+      "column": "Status Date",
+      "displayName": "Status Date",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_DATE",
+      "column": "Date",
+      "displayName": "DATE RANGE",
+      "page": "bee95b7880d7e451c2db",
+      "visual": "943998ec32c803cef02d",
+      "keywords": [
+        "as of date",
+        "calendar date",
+        "date",
+        "reporting date"
+      ]
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "MLA",
+      "displayName": "MLA",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Col T amnt",
+      "displayName": "Col T amnt",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "NR DEALS",
+      "displayName": "NR DEALS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Cap Mkts",
+      "displayName": "Cap Mkts",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Commercial",
+      "displayName": "Commercial",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "REPORTING PERIOD",
+      "displayName": "REPORTING PERIOD",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Year",
+      "displayName": "Year",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "MLA CM-CO merged",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Borrower",
+      "displayName": "Borrower",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "$ Volume",
+      "displayName": "$ Volume",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "NR DEALS",
+      "displayName": "NR DEALS",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "REPORTING PERIOD",
+      "displayName": "REPORTING PERIOD",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Year",
+      "displayName": "Year",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "BORROWER Transposed",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Year",
+      "displayName": "Slicer",
+      "page": "099739e2d6652933ea05",
+      "visual": "00ab7227d1f9015964e9",
+      "keywords": [
+        "fiscal year",
+        "year"
+      ]
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Reporting_Period",
+      "displayName": "Slicer",
+      "page": "099739e2d6652933ea05",
+      "visual": "59d2e6967bc7a6d03550",
+      "keywords": [
+        "period",
+        "reporting period"
+      ]
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Period_Key",
+      "displayName": "Period_Key",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Period_Label",
+      "displayName": "Period_Label",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_REPORTING_PERIOD",
+      "column": "Sort_Order",
+      "displayName": "Sort_Order",
+      "page": "",
+      "visual": ""
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Aircraft_Manufacturer",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "61d036a7275ad9ed2be0",
+      "keywords": [
+        "aircraft manufacturer",
+        "manufacturer"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Family",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "d41c9730e6197a79e0ee",
+      "keywords": [
+        "engine family",
+        "engine group"
+      ]
+    },
+    {
+      "table": "DIM_ENGINE",
+      "column": "Engine_Manufacturer",
+      "displayName": "Slicer",
+      "page": "c95fa81ce6609ed96d84",
+      "visual": "f042f601621c312782ce",
+      "keywords": [
+        "engine maker",
+        "engine manufacturer",
+        "engine oem"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Embedded Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.0/dist/powerbi.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #0078d4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .status {
+            padding: 15px;
+            margin: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .status.loading {
+            background: #fff4e6;
+            color: #663c00;
+            border: 1px solid #ffd700;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        #powerbi-container {
+            width: 100%;
+            height: 700px;
+            border: none;
+            margin: 0;
+        }
+        .debug-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .controls {
+            padding: 15px;
+            margin: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0069b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Power BI Embedded Report</h1>
+            <p>GitHub Pages Demo</p>
+        </div>
+        
+        <div class="controls">
+            <h3>🔧 Backend Configuration</h3>
+            <p>Enter the URL of your Flask backend:</p>
+            <input type="text" id="backend-url" placeholder="e.g., http://your-server:8080" value="http://localhost:8080">
+            <button id="connect-btn">Connect to Backend</button>
+        </div>
+        
+        <div id="status" class="status loading">
+            ⏳ Waiting for backend connection...
+        </div>
+        
+        <div class="debug-info" id="debug-info">
+            <strong>🔧 Debug Info:</strong><br>
+            • Status: Not connected to backend<br>
+        </div>
+        
+        <div id="powerbi-container"></div>
+    </div>
+
+    <script>
+        const statusDiv = document.getElementById('status');
+        const debugInfo = document.getElementById('debug-info');
+        const connectBtn = document.getElementById('connect-btn');
+        const backendUrlInput = document.getElementById('backend-url');
+        const embedContainer = document.getElementById('powerbi-container');
+
+        // Function to update debug info
+        function updateDebugInfo(info) {
+            debugInfo.innerHTML = `<strong>🔧 Debug Info:</strong><br>${info}`;
+        }
+
+        // Function to update status
+        function updateStatus(message, type = 'loading') {
+            statusDiv.className = `status ${type}`;
+            statusDiv.innerHTML = message;
+        }
+
+        // Function to connect to backend and get embed token
+        function connectToBackend() {
+            const backendUrl = backendUrlInput.value.trim();
+            if (!backendUrl) {
+                updateStatus('❌ Please enter a valid backend URL', 'error');
+                return;
+            }
+
+            updateStatus('⏳ Connecting to backend...', 'loading');
+            updateDebugInfo(`• Attempting to connect to: ${backendUrl}/test`);
+
+            // Fetch the embed token from the test endpoint
+            fetch(`${backendUrl}/test`)
+                .then(response => {
+                    console.log('Response status:', response.status);
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('API Response:', data);
+                    if (data.success) {
+                        updateStatus('✅ Connected to backend! Fetching full embed token...', 'success');
+                        
+                        // Update debug info
+                        updateDebugInfo(
+                            `• Report ID: ${data.data.report_id}<br>` +
+                            `• Token Length: ${data.data.token_length} characters<br>` +
+                            `• Embed URL: ${data.data.embed_url.substring(0, 60)}...<br>` +
+                            `• Retrieving full token from backend...`
+                        );
+                        
+                        // Now make a request to get the full embed token from the main endpoint
+                        return fetch(backendUrl)
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error(`HTTP error on main endpoint! Status: ${response.status}`);
+                                }
+                                return response.text();
+                            })
+                            .then(html => {
+                                // If we received HTML, we need to extract the embed token
+                                updateStatus('✅ Received data from backend. Loading Power BI report...', 'success');
+                                
+                                // Create a temporary element to parse the HTML
+                                const tempElement = document.createElement('div');
+                                tempElement.innerHTML = html;
+                                
+                                // Try to extract the embed token, embed URL, and report ID from the HTML
+                                const scriptContent = Array.from(tempElement.querySelectorAll('script'))
+                                    .find(script => script.textContent.includes('embedUrl'))?.textContent;
+                                
+                                if (scriptContent) {
+                                    // Extract the values using regex
+                                    const reportIdMatch = scriptContent.match(/id: ['"]([^'"]+)['"]/);
+                                    const embedUrlMatch = scriptContent.match(/embedUrl: ['"]([^'"]+)['"]/);
+                                    const accessTokenMatch = scriptContent.match(/accessToken: ['"]([^'"]+)['"]/);
+                                    
+                                    if (reportIdMatch && embedUrlMatch && accessTokenMatch) {
+                                        const reportId = reportIdMatch[1];
+                                        const embedUrl = embedUrlMatch[1];
+                                        const accessToken = accessTokenMatch[1];
+                                        
+                                        // Now we have all the data to embed the report
+                                        embedPowerBIReport(reportId, embedUrl, accessToken);
+                                    } else {
+                                        throw new Error('Could not extract Power BI embed details from the response');
+                                    }
+                                } else {
+                                    throw new Error('Could not find Power BI configuration in the response');
+                                }
+                            });
+                    } else {
+                        throw new Error(data.error || 'Unknown error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    updateStatus(`❌ Error: ${error.message}`, 'error');
+                    updateDebugInfo(
+                        `• Error: ${error.message}<br>` +
+                        `• Please check if your backend is running and accessible.<br>` +
+                        `• Make sure CORS is enabled for this origin on your backend.<br>` +
+                        `• Check that your Power BI credentials are valid.`
+                    );
+                });
+        }
+
+        // Function to embed the Power BI report
+        function embedPowerBIReport(reportId, embedUrl, accessToken) {
+            console.log('🔧 Attempting to embed report...');
+            
+            const config = {
+                type: 'report',
+                id: reportId,
+                embedUrl: embedUrl,
+                accessToken: accessToken,
+                tokenType: 1,  // Embed token
+                settings: {
+                    filterPaneEnabled: true,
+                    navContentPaneEnabled: true,
+                    panes: {
+                        filters: {
+                            expanded: false,
+                            visible: true
+                        },
+                        pageNavigation: {
+                            visible: true
+                        }
+                    }
+                }
+            };
+            
+            console.log('📋 Config prepared:', {
+                reportId: config.id,
+                embedUrlPreview: config.embedUrl.substring(0, 50) + '...',
+                tokenLength: config.accessToken.length,
+                tokenType: config.tokenType
+            });
+            
+            try {
+                const report = powerbi.embed(embedContainer, config);
+                
+                // Handle successful load
+                report.on('loaded', () => {
+                    console.log('✅ Report loaded successfully');
+                    updateStatus('✅ Report loaded successfully!', 'success');
+                });
+                
+                // Handle successful render
+                report.on('rendered', () => {
+                    console.log('✅ Report rendered successfully');
+                    updateStatus('✅ Report is now fully rendered and interactive!', 'success');
+                });
+                
+                // Handle errors
+                report.on('error', (event) => {
+                    const error = event.detail;
+                    console.error('❌ Power BI Error:', error);
+                    updateStatus(`❌ Error: ${error.message || JSON.stringify(error)}`, 'error');
+                });
+                
+            } catch (error) {
+                console.error('❌ Embed initialization failed:', error);
+                updateStatus(`❌ Embed Error: ${error.message}`, 'error');
+            }
+        }
+
+        // Event listener for connect button
+        connectBtn.addEventListener('click', connectToBackend);
+    </script>
+</body>
+</html>
